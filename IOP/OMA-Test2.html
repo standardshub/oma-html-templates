@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Enabler Test Specification for [EnablerName]</title>
+  <meta charset="UTF-8">
+  <script src="http://openmobilealliance.github.io/Tools/builds/respec-oma-common.js" async class="remove"></script>
+  <script class="remove">
+    var respecConfig = {
+		// for editor use
+		docType: "ETS", // options are BASE, RD, AD, TS, SUP, ETS, ORG
+		subtitle: "File_Name",
+		shortName:  "shortName",
+		otherLinks: [{
+		  key: "Other Link",
+		  data: [{
+			value: "Link Name",
+			href: "#location"
+		  }]
+		}],
+		editors: [{
+		  name:       "Editor Name",
+		  url:        "http://example.com/",
+		  company:    "Editor Company",
+		  companyURL: "http://example.org/",
+		  mailto:     "editor@example.com",
+		  note:       "editor note"
+		}],
+
+		authors: [{
+		  name:       "Author Name",
+		  url:        "http://example.com/",
+		  company:    "Author Company",
+		  companyURL: "http://example.org/",
+		  mailto:     "author@example.com",
+		  note:       "author note"
+		}],
+
+		interactiveLinks: [{
+		  name: "Link Name",
+		  description: "Link Description",
+		  uri: "http://example.com/",
+		},{
+		  name: "Second Link Name",
+		  description: "Second Link Description",
+		  uri: "http://example2.com/",
+		}],
+
+		// for staff only
+		specStatus: "DRAFT", // options are Draft, Candidate, Approved, Historic
+		publishDate: ""
+	  };
+  </script>
+</head><section id="toc"></section>
+<section id="tof"></section>
+<section id="tot"></section>
+<!-- /end table of content & table of figures -->
+<p>&nbsp;</p>
+<!-- start scope -->
+<section>
+<h2>Scope</h2>
+<p>This document describes in detail available test cases for &lt;Enabler name and version, insert hyperlink to specification pages&gt;.</p>
+<p>The test cases are split in two categories, conformance and interoperability test cases.</p>
+<p>The conformance test cases are aimed to verify the adherence to normative requirements described in the technical specifications.</p>
+<p>The interoperability test cases are aimed to verify that implementations of the specifications work satisfactory.</p>
+<p>If either conformance or interoperability tests do not exists at the creation of the test specification this part should be marked not available.</p>
+</section>
+<!-- end scope -->
+<p>&nbsp;</p>
+<!-- end scope -->
+<p>&nbsp;</p>
+<!-- end scope -->
+<p>&nbsp;</p>
+<!-- end scope -->
+<p>&nbsp;</p>
+<!-- end scope -->
+<p>&nbsp;</p>
+<!-- end scope -->
+<p>&nbsp;</p>
+<!-- end scope -->
+<p>&nbsp;</p>
+<!-- end scope -->
+<p>&nbsp;</p>
+<!-- end scope -->
+<p>&nbsp;</p>
+<!-- end scope -->
+<p>&nbsp;</p>
+<!-- end scope -->
+<p>&nbsp;</p>
+<!-- start terminology and conventions -->
+<section>
+<h2>Terminology and Conventions</h2>
+<section><!-- start conventions -->
+<h2>Conventions</h2>
+<p>The key words &ldquo;MUST&rdquo;, &ldquo;MUST NOT&rdquo;, &ldquo;REQUIRED&rdquo;, &ldquo;SHALL&rdquo;, &ldquo;SHALL NOT&rdquo;, &ldquo;SHOULD&rdquo;, &ldquo;SHOULD NOT&rdquo;, &ldquo;RECOMMENDED&rdquo;, &ldquo;MAY&rdquo;, and &ldquo;OPTIONAL&rdquo; in this document are to be interpreted as described in .</p>
+<p>All sections and appendixes, except &ldquo;Scope&rdquo; and &ldquo;Introduction&rdquo;, are normative, unless they are explicitly indicated to be informative.</p>
+<p>The following numbering scheme is used:</p>
+<pre>            <strong>xxx-y.z-con-number</strong> where:
+                xxx        Name of enabler, e.g. MMS or Browsing
+                y.z        Version of enabler release, e.g. 1.2 or 1.2.1
+                "con"      Indicating this test is a conformance test case
+                number     Leap number for the test case
+        </pre>
+<p>Or</p>
+<pre>          <strong>xxx-y.z-int-number</strong> where:
+                xxx        Name of enabler, e.g. MMS or Browsing
+                y.z        Version of enabler release, e.g. 1.2 or 1.2.1
+                "int"      Indicating this test is a interoperability test case
+                number     Leap number for the test case
+        </pre>
+<aside class="example">
+<p>If needed, describe or declare using appropriate normative references the additional conventions that are used.</p>
+<p><strong>DELETE THIS COMMENT</strong></p>
+</aside>
+</section>
+<!-- /end conventions --> <!-- /end conventions --> <!-- /end conventions --> <!-- start definitions -->
+<section>
+<h2>Definitions</h2>
+<aside class="example">
+<p>Add definitions in new rows of the following table as needed. The following examples show how dictionary references should be made as well as locally defined terms. This description list should be maintained in sorted alphabetic order based on the labels of the terms.</p>
+<p><strong>DELETE THIS COMMENT.</strong></p>
+</aside>
+<!-- start definition list -->
+<dl>
+<dt><dfn>Entity</dfn></dt>
+<dd>Use definition #1 from [OMADICT].</dd>
+<dt><dfn>Interactive Service</dfn></dt>
+<dd>Use definition from [OMADICT].</dd>
+<dt><dfn>Loal Term</dfn></dt>
+<dd>The definition description would be presented directly here.</dd>
+</dl>
+<p>Kindly consult for more definitions used in this document.</p>
+</section>
+<!-- /end definitions --> <!-- /end definitions --> <!-- /end definitions --> <!-- start abbreviations -->
+<section>
+<h2>Abbreviations</h2>
+<aside class="example">
+<p>Add abbreviations as needed to the following definition list. No special notation should be made regarding terms copied from the Dictionary. This definition list should be maintained in alphabetic order.</p>
+<p><strong>DELETE THIS COMMENT.</strong></p>
+</aside>
+<!-- start abbreviations list -->
+<dl>
+<dt><abbr title="Implementation  Conformance Specification">ICS</abbr></dt>
+<dd>Implementation Conformance Specification.</dd>
+<dt><abbr title="Implementation eXtra Information">IXIT</abbr></dt>
+<dd>Implementation eXtra Information.</dd>
+<dt><abbr title="Open Mobile Alliance">OMA</abbr></dt>
+<dd>Open Mobile Alliance.</dd>
+</dl>
+<!-- end abbreviations list-->
+<p>Kindly consult for more abbreviations used in this document.</p>
+</section>
+<!-- /end abbreviations --> <!-- /end abbreviations --> <!-- /end abbreviations --></section>
+<!-- end terminology and conventions -->
+<p>&nbsp;</p>
+<!-- end terminology and conventions -->
+<p>&nbsp;</p>
+<!-- end terminology and conventions -->
+<p>&nbsp;</p>
+<!-- end terminology and conventions -->
+<p>&nbsp;</p>
+<!-- end terminology and conventions -->
+<p>&nbsp;</p>
+<!-- end terminology and conventions -->
+<p>&nbsp;</p>
+<!-- end terminology and conventions -->
+<p>&nbsp;</p>
+<!-- end terminology and conventions -->
+<p>&nbsp;</p>
+<!-- end terminology and conventions -->
+<p>&nbsp;</p>
+<!-- end terminology and conventions -->
+<p>&nbsp;</p>
+<!-- end terminology and conventions -->
+<p>&nbsp;</p>
+<!-- start introduction -->
+<section class="informative">
+<h2>Introduction</h2>
+<aside class="example">
+<p>This chapter should describe the introduction to the test cases specified in the document.</p>
+<p><strong>DELETE THIS COMMENT.</strong></p>
+</aside>
+<p>The purpose of this document is to provide test cases for &lt;xxx&gt; Enabler Release &lt;y.z&gt;.</p>
+<aside class="example">
+<p>This part should give some introduction for the need of verification.</p>
+<p><strong>DELETE THIS COMMENT.</strong></p>
+</aside>
+<p>The implementation of some features is optional for the Clients and/or the Servers in the &lt;xxx&gt; Enabler. The tests associated with these optional features are marked as "(Includes Optional Features)" in the test specification.</p>
+<aside class="example">
+<p>List the items needed to test the enabler, e.g. The following items on an overall level are needed to adequately test the &lt;xxx&gt; enabler:</p>
+<ul>
+<li>An origin server configured to support&hellip;.</li>
+<li>A web page providing a link&hellip;</li>
+<li>[Optional] A web page providing a link&hellip;</li>
+</ul>
+<p>Detailed info will be put in the specific test cases description.</p>
+<p><strong>DELETE THIS COMMENT.</strong></p>
+</aside>
+<aside class="example">
+<p>If possible this part of the document should describe any protocols used by this enabler, e.g. The &lt;xxx&gt; enabler tests are carried out using &lt;yyy&gt; and/or &lt;zzz&gt; protocols.</p>
+<p><strong>DELETE THIS COMMENT.</strong></p>
+</aside>
+</section>
+<!-- /end introduction -->
+<p>&nbsp;</p>
+<!-- /end introduction -->
+<p>&nbsp;</p>
+<!-- /end introduction -->
+<p>&nbsp;</p>
+<!-- /end introduction -->
+<p>&nbsp;</p>
+<!-- /end introduction -->
+<p>&nbsp;</p>
+<!-- /end introduction -->
+<p>&nbsp;</p>
+<!-- /end introduction -->
+<p>&nbsp;</p>
+<!-- /end introduction -->
+<p>&nbsp;</p>
+<!-- /end introduction -->
+<p>&nbsp;</p>
+<!-- /end introduction -->
+<p>&nbsp;</p>
+<!-- /end introduction -->
+<p>&nbsp;</p>
+<!-- start Conformance Test Cases -->
+<section>
+<h2>&lt;xxx&gt; Conformance Test Cases</h2>
+<aside class="example">
+<p>There should be a chapter for conformance tests, under this chapter the test cases may be grouped in best possible way according to e.g. feature or groups of features to make the document easy to read and use.</p>
+<p>Test Cases should not address anything not explicitly mentioned in the Specifications or ETR. They should also not address any quality of service issues. The Pass/Fail verdict for a Test Case should be clearly specified and not be open to interpretation.</p>
+<p>If there are no conformance test cases available, please indicate with 'Not Available'.</p>
+<p>If information for a heading of the test case is not available, please indicate that with 'Not Available' in the appropriate row of a test case.</p>
+<p>Section n.1 shows example on headings for one test case. It should be replicated, as needed, for each test case.</p>
+<p>If the test case tests one or more optional SCR Items, the title of the test case should have "(Includes Optional Features)" string appended to it.</p>
+<p><strong>DELETE THIS COMMENT.</strong></p>
+</aside>
+<!-- start Conformance Test Cases Level 2 -->
+<section>
+<h2>&lt;xxx-y.z-con-number&gt;</h2>
+<aside class="example">
+<p>This section lists the steps needed for a conformance test case.</p>
+<p><strong>DELETE THIS COMMENT.</strong></p>
+</aside>
+<table><caption>Test Information for &lt;yyy&gt; Conformance Test</caption>
+<tbody>
+<tr>
+<td>Test Case Id</td>
+<td>&lt;xxx-y.z-con-number, e.g. IMPS-1.2-con-001.&gt;</td>
+</tr>
+<tr>
+<td>Test Object</td>
+<td>&lt;Client and/or Server device under test.&gt;</td>
+</tr>
+<tr>
+<td>Test Case Description</td>
+<td>&lt;Short description of the test case, e.g. To test delivery functionality.&gt;</td>
+</tr>
+<tr>
+<td>Specification Reference</td>
+<td>&lt;[REFERENCE EXAMPLE 1] Chapter x.&gt;</td>
+</tr>
+<tr>
+<td>SCR Reference</td>
+<td>&lt;Reference to explicitly tested SCR items, e.g. xxx-C-001-M.&gt;
+<aside class="example">
+<p>The SCRs listed in this section should directly apply to this test case's Test Object. Listing of the SCRs tested implicitly should be avoided.</p>
+<p><strong>DELETE THIS COMMENT.</strong></p>
+</aside>
+</td>
+</tr>
+<tr>
+<td>Tool</td>
+<td>&lt;List any tool including version available for this test case, if any.&gt;</td>
+</tr>
+<tr>
+<td>Test code</td>
+<td>&lt;List any code including version available for this test case, if any.&gt;</td>
+</tr>
+<tr>
+<td>Preconditions</td>
+<td>&lt;List the preconditions needed to execute the test case, e.g.
+<ul>
+<ul>
+<li>Equipment:</li>
+<ul>
+<li>2 clients (A, B) / 1 server.</li>
+<li>Functioning SAP with the 2 user accounts (A, B) existing on it.</li>
+</ul>
+<li>State:</li>
+<ul>
+<li>Both clients are logged in.</li>
+<li>Both client and server support the same type of the delivery mechanism (Push or Notify/Get or both).</li>
+<li>Both clients and server support Delivery Report functionality.</li>
+<li>Client A is capable of displaying a successful delivery report.</li>
+</ul>
+<li>Continuation of / Can be tested at the same time as:</li>
+<ul>
+<li>IMPS-1.1-int-IMSE-001 - Verify that a message sent by one client is delivered to the other client.</li>
+</ul>
+<li>Prerequisite for this test:</li>
+<ul>
+<li>IMPS-1.1-int-IMSE-001 - Verify that a message sent by one client is delivered to the other client&gt;</li>
+</ul>
+</ul>
+</ul>
+<p>&lt;Optionally ICS (Implementation Conformance Statement) / IXIT (Implementation eXtra Information for Testing) information can be added here.&gt;</p>
+<ul>
+<li>Applicability:</li>
+<ul>
+<li>ics_PSK_TLS AND ics_3GPP.</li>
+<li>ixit_mAC_KEY_ID.&gt;</li>
+</ul>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Test Procedure</td>
+<td>&lt;Describe the procedure to execute the test case, e.g.
+<ol>
+<li>User sends MMS message with terminal A to terminal B.</li>
+<li>The message should be received in terminal B.</li>
+</ol>
+Any additional tips and tricks to the test procedure can also be added here.&gt;</td>
+</tr>
+<tr>
+<td>Pass-Criteria</td>
+<td>&lt;Describe the criteria for passing the test case, e.g.<br />
+<ol>
+<li>MMS is received in terminal B.</li>
+<li>MMS is readable.&gt;</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<!-- end Conformance Test Cases Level 2 --> <!-- end Conformance Test Cases Level 2 --> <!-- end Conformance Test Cases Level 2 --></section>
+<!-- /end Conformance Test Cases -->
+<p>&nbsp;</p>
+<!-- /end Conformance Test Cases -->
+<p>&nbsp;</p>
+<!-- /end Conformance Test Cases -->
+<p>&nbsp;</p>
+<!-- /end Conformance Test Cases -->
+<p>&nbsp;</p>
+<!-- /end Conformance Test Cases -->
+<p>&nbsp;</p>
+<!-- /end Conformance Test Cases -->
+<p>&nbsp;</p>
+<!-- /end Conformance Test Cases -->
+<p>&nbsp;</p>
+<!-- /end Conformance Test Cases -->
+<p>&nbsp;</p>
+<!-- /end Conformance Test Cases -->
+<p>&nbsp;</p>
+<!-- /end Conformance Test Cases -->
+<p>&nbsp;</p>
+<!-- /end Conformance Test Cases -->
+<p>&nbsp;</p>
+<!-- /end Conformance Test Cases -->
+<p>&nbsp;</p>
+<!-- start Interoperability Test Cases -->
+<section>
+<h2>&lt;xxx&gt; Interoperability Test Cases</h2>
+<aside class="example">
+<p>There should be a chapter for interoperability tests. Under this chapter the test cases should be grouped according to the ETR feature key grouping as specified in the ETR document for the Enabler. This is done for the ease of association of the test cases to the corresponding ETR requirements and the SCRs.</p>
+<p>Test Cases should not address anything not explicitly mentioned in the Specifications or ETR. They should also not address any quality of service issues. The Pass/Fail verdict for a Test Case should be clearly specified and not be open to interpretation.</p>
+<p>If there are no conformance test cases available, please indicate with 'Not Available'.</p>
+<p>If information for a heading of the test case is not available, please indicate that with 'Not Available' in the appropriate row of a test case.</p>
+<p>Section n.1 shows example on headings for one test case. It should be replicated, as needed, for each test case.</p>
+<p>If the test case tests one or more optional SCR Items, the title of the test case should have "(Includes Optional Features)" string appended to it.</p>
+<p><strong>DELETE THIS COMMENT.</strong></p>
+</aside>
+<!-- start Level 2 -->
+<section>
+<h2>&lt;xxx-y.z-int-number&gt;</h2>
+<aside class="example">
+<p>This section lists the steps needed for a interoperability test case.</p>
+<p><strong>DELETE THIS COMMENT.</strong></p>
+</aside>
+<table><caption>Test Information for &lt;zzz&gt; Interoperability Test</caption>
+<tbody>
+<tr>
+<td>Test Case Id</td>
+<td>&lt;xxx-y.z-int-number, e.g. IMPS-1.2-int-001.&gt;</td>
+</tr>
+<tr>
+<td>Test Object</td>
+<td>&lt;Client and/or Server device under test.&gt;</td>
+</tr>
+<tr>
+<td>Test Case Description</td>
+<td>&lt;Short description of the test case, e.g. To test delivery functionality.&gt;</td>
+</tr>
+<tr>
+<td>Specification Reference</td>
+<td>&lt;[REFERENCE EXAMPLE 1] Chapter x.&gt;</td>
+</tr>
+<tr>
+<td>SCR Reference</td>
+<td>&lt;Reference to explicitly tested SCR items, e.g. xxx-C-001-M.&gt;
+<aside class="example">
+<p>The SCRs listed in this section should directly apply to this test case's Test Object and to the ETR requirement(s) listed in the below ETR Reference section. Listing of the SCRs tested implicitly should be avoided.</p>
+<p><strong>DELETE THIS COMMENT.</strong></p>
+</aside>
+</td>
+</tr>
+<tr>
+<td>ETR Reference</td>
+<td>&lt;Reference to the applicable ETR requirement (s), e.g. xxx-04&gt;
+<aside class="example">
+<p>The ETR requirement(s) listed in this section should directly apply to this test case's Test Object.</p>
+<p><strong>DELETE THIS COMMENT.</strong></p>
+</aside>
+</td>
+</tr>
+<tr>
+<td>Tool</td>
+<td>&lt;List any tool including version available for this test case, if any.&gt;</td>
+</tr>
+<tr>
+<td>Test code</td>
+<td>&lt;List any code including version available for this test case, if any.&gt;</td>
+</tr>
+<tr>
+<td>Preconditions</td>
+<td>&lt;List the preconditions needed to execute the test case, e.g.
+<ul>
+<li>Equipment:</li>
+<ul>
+<li>2 clients (A, B) / 1 server.</li>
+<li>Functioning SAP with the 2 user accounts (A, B) existing on it.</li>
+</ul>
+<li>State:</li>
+<ul>
+<li>Both clients are logged in.</li>
+<li>Both client and server support the same type of the delivery mechanism (Push or Notify/Get or both).</li>
+<li>Both clients and server support Delivery Report functionality.</li>
+<li>Client A is capable of displaying a successful delivery report.</li>
+</ul>
+<li>Continuation of / Can be tested at the same time as:</li>
+<ul>
+<li>IMPS-1.1-int-IMSE-001 - Verify that a message sent by one client is delivered to the other client.</li>
+</ul>
+<li>Prerequisite for this test:</li>
+<ul>
+<li>IMPS-1.1-int-IMSE-001 - Verify that a message sent by one client is delivered to the other client.&gt;</li>
+</ul>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Test Procedure</td>
+<td>&lt;Describe the procedure to execute the test case, e.g.
+<ol>
+<li>User sends MMS message with terminal A to terminal B.</li>
+<li>The message should be received in terminal B.</li>
+</ol>
+Any additional tips and tricks to the test procedure can also be added here.&gt;</td>
+</tr>
+<tr>
+<td>Pass-Criteria</td>
+<td>&lt;Describe the criteria for passing the test case, e.g.<br />
+<ol>
+<li>MMS is received in terminal B.</li>
+<li>MMS is readable.&gt;</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<!-- /end Level 2 --> <!-- /end Level 2 --> <!-- /end Level 2 --></section>
+<!-- end Interoperability Test Cases -->
+<p>&nbsp;</p>
+<!-- end Interoperability Test Cases -->
+<p>&nbsp;</p>
+<!-- end Interoperability Test Cases -->
+<p>&nbsp;</p>
+<!-- end Interoperability Test Cases -->
+<p>&nbsp;</p>
+<!-- end Interoperability Test Cases -->
+<p>&nbsp;</p>
+<!-- end Interoperability Test Cases -->
+<p>&nbsp;</p>
+<!-- end Interoperability Test Cases -->
+<p>&nbsp;</p>
+<!-- end Interoperability Test Cases -->
+<p>&nbsp;</p>
+<!-- end Interoperability Test Cases -->
+<p>&nbsp;</p>
+<!-- end Interoperability Test Cases -->
+<p>&nbsp;</p>
+<!-- end Interoperability Test Cases -->
+<p>&nbsp;</p>
+<!-- end Interoperability Test Cases -->
+<p>&nbsp;</p>
+<!-- end Interoperability Test Cases -->
+<p>&nbsp;</p>
+<!-- end Interoperability Test Cases -->
+<p>&nbsp;</p>
+<!-- start Conformance Test Case applicability appendix -->
+<section class="appendix">
+<h2>&lt;&lt;Optional&gt;&gt; Conformance Test Case applicability</h2>
+<!-- start Introduction -->
+<section>
+<h2>Introduction</h2>
+<p>This section shall help implementers of the &lt;&lt;xxx&gt;&gt; Enabler to select appropriate Conformance test cases that are applicable to the features implemented.</p>
+<p>This appendix lists all test cases testing only mandatory features, ICS, IXIT and a mapping from ICS/IXIT to applicable test cases as defined by the Open Mobile Alliance.</p>
+</section>
+<!-- end Introduction --> <!-- start Test Cases testing only mandatory features -->
+<section>
+<h2>Test Cases testing only mandatory features</h2>
+<p>These Conformance test cases are independent from any applicability, are testing only mandatory SCRs and SHALL be run with every implementation.</p>
+<table><caption>Test Cases testing only mandatory features</caption>
+<thead>
+<tr>
+<td>Test Case</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SUPL-1.0-con-000 - Compatible Versions</td>
+</tr>
+</tbody>
+</table>
+</section>
+<!-- /end Test Cases testing only mandatory features --> <!-- /end Test Cases testing only mandatory features --> <!-- /end Test Cases testing only mandatory features --> <!-- start Applicability -->
+<section>
+<h2>Applicability</h2>
+<!-- start client ics -->
+<section>
+<h2>Client ICS</h2>
+<table><caption>Client ICS</caption>
+<thead>
+<tr>
+<td>ICS</td>
+<td>Description</td>
+<td>SCR Reference(s)</td>
+<td>Supported (yes/no)</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ics_SLP_SessionID _Ipv4.</td>
+<td>IPV4 in SLP session ID supported.</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+<!-- /end client ics --> <!-- /end client ics --> <!-- /end client ics --> <!-- start Client IXIT -->
+<section>
+<h2>Client IXIT</h2>
+<table><caption>Client IXIT</caption>
+<thead>
+<tr>
+<td>IXIT</td>
+<td>Description</td>
+<td>Unit &lt;&lt;(Range of values)&gt;&gt;</td>
+<td>Value</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ixit_timer_UT1.</td>
+<td>Value of Timer UT1.</td>
+<td>seconds (5 to 25).</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+<!-- end Client IXIT --> <!-- end Client IXIT --> <!-- end Client IXIT --> <!-- start Server ICS -->
+<section>
+<h2>Server ICS</h2>
+<table><caption>Server ICS</caption>
+<thead>
+<tr>
+<td>ICS</td>
+<td>Description</td>
+<td>SCR Reference(s)</td>
+<td>Supported (yes/no)</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ics_SLP_SessionID _Ipv4.</td>
+<td>IPV4 in SLP session ID supported.</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+<!-- end Server ICS --> <!-- end Server ICS --> <!-- end Server ICS --> <!-- start Server IXIT -->
+<section>
+<h2>Server IXIT</h2>
+<table><caption>Server IXIT</caption>
+<thead>
+<tr>
+<td>IXIT</td>
+<td>Description</td>
+<td>Unit &lt;&lt;(Range of values)&gt;&gt;</td>
+<td>Value</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ixit_timer_ST1.</td>
+<td>Value of Timer ST1.</td>
+<td>seconds (5 to 25).</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+<!-- end Server IXIT --> <!-- end Server IXIT --> <!-- end Server IXIT --></section>
+<!-- end Applicability --> <!-- end Applicability --> <!-- end Applicability --> <!-- start ICS to test case mapping --><!-- end ICS to test case mapping --> <!-- end ICS to test case mapping --> <!-- end ICS to test case mapping --></section>
+<!-- end Conformance Test Case applicability appendix -->
+<p>&nbsp;</p>
+<!-- end Conformance Test Case applicability appendix -->
+<p>&nbsp;</p>
+<!-- end Conformance Test Case applicability appendix -->
+<p>&nbsp;</p>
+<!-- end Conformance Test Case applicability appendix -->
+<p>&nbsp;</p>
+<!-- end Conformance Test Case applicability appendix -->
+<p>&nbsp;</p>
+<!-- end Conformance Test Case applicability appendix -->
+<p>&nbsp;</p>
+<!-- end Conformance Test Case applicability appendix -->
+<p>&nbsp;</p>
+<!-- end Conformance Test Case applicability appendix -->
+<p>&nbsp;</p>
+<!-- end Conformance Test Case applicability appendix -->
+<p>&nbsp;</p>
+<!-- end Conformance Test Case applicability appendix -->
+<p>&nbsp;</p>
+<!-- end Conformance Test Case applicability appendix -->
+<p>&nbsp;</p>
+<!-- end Conformance Test Case applicability appendix -->
+<p>&nbsp;</p>
+<!-- end Conformance Test Case applicability appendix -->
+<p>&nbsp;</p>
+<!-- end Conformance Test Case applicability appendix -->
+<p>&nbsp;</p>
+<!-- end Conformance Test Case applicability appendix -->
+<p>&nbsp;</p>
+<!-- end Conformance Test Case applicability appendix -->
+<p>&nbsp;</p>
+<!-- start additional appendix -->
+<p>&nbsp;</p>
+<!-- note that there is no need for appendix class -->
+<section>
+<h2>Test to be Performed</h2>
+<p>The following tests need to be performed and passed by implementations wishing to participate in the TestFest.</p>
+<!-- start App Headers -->
+<section>
+<h2>Entry Criteria for FestFest</h2>
+<p>The following tests need to be performed and passed by implementations wishing to participate in the TestFest.</p>
+<p>This entry criteria MUST be supported by all&nbsp;the implementations attending the TestFest. The tests are defined in the ETS [XXXXXETS] and any special comments are noted.</p>
+<table id="tb-entry-criteria" style="width: 100%;"><caption>List of Test Cases for the Entry Criteria&nbsp;</caption>
+<thead>
+<tr>
+<td>&nbsp;Test Cases ID</td>
+<td>Special Conditions</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<!-- end More Headers --></section>
+<!-- end App Headers --></section>
+<section>
+<h2>Alternative Validation Activities</h2>
+<pre class="example">This section should describe non-TestFest activities which will be needed to fully validate the Enabler.<br />If bi-lateral teting is being specified, a subsection should be developed which describes the needed tests to be performed and any operational considerations.<br />If use of third-party tools or self-validaton is needed, then a short statement which declares that there is no needed validation activities required required <br />will be all that is needed.<br /><br /><strong>DELETE THIS COMMENT.</strong></pre>
+</section>
