@@ -6,51 +6,52 @@
   <script src="http://openmobilealliance.github.io/Tools/builds/respec-oma-common.js" async class="remove"></script>
   <script class="remove">
     var respecConfig = {
-        		// for editor use
-        		docType: "ETS", // options are BASE, RD, AD, TS, SUP, ETS, ORG
-        		subtitle: "File_Name",
-        		shortName:  "shortName",
-        		otherLinks: [{
-        		  key: "Other Link",
-        		  data: [{
-        			value: "Link Name",
-        			href: "#location"
-        		  }]
-        		}],
-        		editors: [{
-        		  name:       "Editor Name",
-        		  url:        "http://example.com/",
-        		  company:    "Editor Company",
-        		  companyURL: "http://example.org/",
-        		  mailto:     "editor@example.com",
-        		  note:       "editor note"
-        		}],
+                		// for editor use
+                		docType: "ETS", // options are BASE, RD, AD, TS, SUP, ETS, ORG
+                		subtitle: "File_Name",
+                		shortName:  "shortName",
+                		otherLinks: [{
+                		  key: "Other Link",
+                		  data: [{
+                			value: "Link Name",
+                			href: "#location"
+                		  }]
+                		}],
+                		editors: [{
+                		  name:       "Editor Name",
+                		  url:        "http://example.com/",
+                		  company:    "Editor Company",
+                		  companyURL: "http://example.org/",
+                		  mailto:     "editor@example.com",
+                		  note:       "editor note"
+                		}],
     
-        		authors: [{
-        		  name:       "Author Name",
-        		  url:        "http://example.com/",
-        		  company:    "Author Company",
-        		  companyURL: "http://example.org/",
-        		  mailto:     "author@example.com",
-        		  note:       "author note"
-        		}],
+                		authors: [{
+                		  name:       "Author Name",
+                		  url:        "http://example.com/",
+                		  company:    "Author Company",
+                		  companyURL: "http://example.org/",
+                		  mailto:     "author@example.com",
+                		  note:       "author note"
+                		}],
     
-        		interactiveLinks: [{
-        		  name: "Link Name",
-        		  description: "Link Description",
-        		  uri: "http://example.com/",
-        		},{
-        		  name: "Second Link Name",
-        		  description: "Second Link Description",
-        		  uri: "http://example2.com/",
-        		}],
+                		interactiveLinks: [{
+                		  name: "Link Name",
+                		  description: "Link Description",
+                		  uri: "http://example.com/",
+                		},{
+                		  name: "Second Link Name",
+                		  description: "Second Link Description",
+                		  uri: "http://example2.com/",
+                		}],
     
-        		// for staff only
-        		specStatus: "DRAFT", // options are Draft, Candidate, Approved, Historic
-        		publishDate: ""
-        	  };
+                		// for staff only
+                		specStatus: "DRAFT", // options are Draft, Candidate, Approved, Historic
+                		publishDate: ""
+                	  };
   </script>
-</head><body>
+</head>
+<body>
   <section id="toc"></section>
   <section id="tof"></section>
   <section id="tot"></section>
@@ -59,11 +60,470 @@
   </p>
   <!-- start scope -->
   <section>
-    <h2>Scope</h2>
-    <p>This document describes in detail available test cases for &lt;<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="Enabler" data-mce-index="0">Enabler</span> name and version, insert hyperlink to specification pages&gt;.</p>
-    <p>The test cases are split in two categories, conformance and interoperability test cases.</p>
-    <p>The conformance test cases are aimed to verify the adherence to normative requirements described in the technical specifications.</p>
-    <p>The interoperability test cases are aimed to verify that implementations of the specifications work satisfactory.</p>
-    <p>If either conformance or interoperability tests do not exists at the creation of the test specification this part should be marked not available.</p>
+    <h2 id="conf">Conformance test cases</h2>
+    <p>text</p>
+    <div align="center">
+      <table width="0" cellspacing="0" cellpadding="0" border="1">
+        <tbody>
+          <tr>
+            <td width="156" valign="top">
+              <p>Test Case Id</p>
+            </td>
+            <td width="427" valign="top">
+              <p>LwM2M-1.0-con-DMSE-001</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="156" valign="top">
+              <p><b>Test Objecta(DUT)</b></p>
+            </td>
+            <td width="427" valign="top">
+              <p>LwM2M Client device under test</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="156" valign="top">
+              <p><b>Test Case Description</b></p>
+              <p><b>(Test Purpose)</b></p>
+            </td>
+            <td width="427" valign="top">
+              <p>Verify that the DUT(LwM2M Client) can respond properly to the ‘READ’ message from the Tester(LwM2M Server). For all of the readable mandatory objects(LwM2M Server and Device) &nbsp;</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="156" valign="top">
+              <p><b>Specification Reference</b></p>
+            </td>
+            <td width="427" valign="top">
+              <p>Section 5.4.1</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="156" valign="top">
+              <p><b>SCR Reference</b></p>
+            </td>
+            <td width="427" valign="top">
+              <p>LwM2M-DMSE-001-C-M</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="156" valign="top">
+              <p><b>Tool</b></p>
+            </td>
+            <td width="427" valign="top">
+              <p>LwM2M Conformance Tester_TTA_v1.0</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="156" valign="top">
+              <p><b>Test code</b></p>
+            </td>
+            <td width="427" valign="top">
+              <p>ACK-2.05&nbsp;&nbsp; MID=value, Token=value, OptionSet={"Content-Format":"application/vnd.oma.lwm2m+tlv"}, payload</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="156" valign="top">
+              <p><b>Preconditions</b></p>
+            </td>
+            <td width="427" valign="top">
+              <ul>
+                <li>Equipment:
+                  <ul style="list-style-type: circle;" data-mce-style="list-style-type: circle;">
+                    <li>1 LwM2M client(DUT) / 1 LwM2M server(Tester)</li>
+                  </ul>
+                </li>
+                <li>State:
+                  <ul style="list-style-type: circle;" data-mce-style="list-style-type: circle;">
+                    <li>The DUT has the Objects and Object Instances(Mandatory and Optional).</li>
+                    <li>The DUT and Tester support ‘tlv’ content format.</li>
+                    <li>The DUT is registered to the Tester with No SEC mode.</li>
+                  </ul>
+                </li>
+                <li>Continuation of / Can be tested at the same time as:
+                  <ul style="list-style-type: circle;" data-mce-style="list-style-type: circle;">
+                    <li>LwM2M-1.0-con-CR-001 – Verify that the DUT can be registered with a message including URI-Path and Query Parameters (endpoint name, lifetime)</li>
+                  </ul>
+                </li>
+                <li>Prerequisite for this test:
+                  <ul style="list-style-type: circle;" data-mce-style="list-style-type: circle;">
+                    <li>None</li>
+                  </ul>
+                </li>
+                <li>Applicability:
+                  <ul style="list-style-type: circle;" data-mce-style="list-style-type: circle;">
+                    <li>ICS<br>
+                      - 5-1. Support of “Read” operation</li>
+                    <li>IXIT&nbsp; <br>
+                      - Object Instances of Mandatory Objects(LwM2M Server and &nbsp;&nbsp;<br>
+                      &nbsp;Device)<br>
+                      - Endpoint name, lifetime <br>
+                      - IP Address, Port Number</li>
+                  </ul>
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td width="156" valign="top">
+              <p><b>Test Procedure</b></p>
+            </td>
+            <td width="427" valign="top">
+              <ol>
+                <li>The Tester send ‘READ’ message(CoAP/GET) to the DUT.<br>
+                  (GET /1/, LwM2M Server)</li>
+                <li>The DUT send response message(2.05 Content).<br>
+                  (The Object Instance(s) correspond to the IXIT)<br>
+                  &lt; ACK-2.05&nbsp;&nbsp; MID=value, Token=value, OptionSet={"Content-Format":"application/vnd.oma.lwm2m+tlv"}, payload&gt;</li>
+                <li>The Tester send ‘READ’ message(CoAP/GET) to the DUT.<br>
+                  (GET /3/, Device)</li>
+                <li>The DUT send response message(2.05 Content).<br>
+                  (The Object Instance(s) correspond to the IXIT).<br>
+                  &lt; ACK-2.05&nbsp;&nbsp; MID=value, Token=value, OptionSet={"Content-Format":"application/vnd.oma.lwm2m+tlv"}, payload&gt;</li>
+              </ol>
+            </td>
+          </tr>
+          <tr>
+            <td width="156" valign="top">
+              <p><b>Pass-Criteria</b></p>
+            </td>
+            <td width="427" valign="top">
+              <p>&lt;Verify that the DUT properly returned the object instances to the Tester.</p>
+              <ol start="5">
+                <li>The DUT returned all of the object instance(s) of LwM2M Server object.</li>
+                <li>The DUT returned all of the object instance(s) of Device object.</li>
+              </ol>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section>
+    <h2>Another section</h2>
+    <p>paragraph</p>
+    <table id="con-001" style="border-collapse: collapse; width: 100%;" data-mce-style="border-collapse: collapse; width: 100%;" border="1"><caption>Title is needed&nbsp;</caption>
+      <thead>
+        <tr style="height: 12px;" data-mce-style="height: 12px;">
+          <td style="height: 12px;" data-mce-style="height: 12px;"><br>
+          </td>
+          <td style="height: 12px;" data-mce-style="height: 12px;"><br>
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="height: 18px;" data-mce-style="height: 18px;">
+          <td style="width: 50%; height: 18px;" data-mce-style="width: 50%; height: 18px;"><br>
+          </td>
+          <td style="width: 50%; height: 18px;" data-mce-style="width: 50%; height: 18px;"><br>
+          </td>
+        </tr>
+        <tr style="height: 18px;" data-mce-style="height: 18px;">
+          <td style="width: 50%; height: 18px;" data-mce-style="width: 50%; height: 18px;"><br>
+          </td>
+          <td style="width: 50%; height: 18px;" data-mce-style="width: 50%; height: 18px;"><br>
+          </td>
+        </tr>
+        <tr style="height: 18px;" data-mce-style="height: 18px;">
+          <td style="width: 50%; height: 18px;" data-mce-style="width: 50%; height: 18px;"><br>
+          </td>
+          <td style="width: 50%; height: 18px;" data-mce-style="width: 50%; height: 18px;"><br>
+          </td>
+        </tr>
+        <tr style="height: 18px;" data-mce-style="height: 18px;">
+          <td style="width: 50%; height: 18px;" data-mce-style="width: 50%; height: 18px;"><br>
+          </td>
+          <td style="width: 50%; height: 18px;" data-mce-style="width: 50%; height: 18px;">
+            <p>&lt;Verify that the DUT properly returned the object instances to the Tester.</p>
+            <ol>
+              <li>The DUT returned all of the object instance(s) of LwM2M Server object.</li>
+            </ol>
+            The DUT returned all of the object instance(s) of Device object. </td>
+        </tr>
+      </tbody>
+    </table>
+    <p><br>
+    </p>
+  </section>
+  <section>
+    <h2>test section</h2>
+    <p>paragraph</p>
+    <div align="center">
+      <table width="0" cellspacing="0" cellpadding="0" border="1">
+        <tbody>
+          <tr>
+            <td width="156" valign="top">
+              <p>Test Case Id</p>
+            </td>
+            <td width="427" valign="top">
+              <p>LwM2M-1.0-con-DMSE-001</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="156" valign="top">
+              <p><b>Test Objecta(DUT)</b></p>
+            </td>
+            <td width="427" valign="top">
+              <p>LwM2M Client device under test</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="156" valign="top">
+              <p><b>Test Case Description</b></p>
+              <p><b>(Test Purpose)</b></p>
+            </td>
+            <td width="427" valign="top">
+              <p>Verify that the DUT(LwM2M Client) can respond properly to the ‘READ’ message from the Tester(LwM2M Server). For all of the readable mandatory objects(LwM2M Server and Device) &nbsp;</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="156" valign="top">
+              <p><b>Specification Reference</b></p>
+            </td>
+            <td width="427" valign="top">
+              <p>Section 5.4.1</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="156" valign="top">
+              <p><b>SCR Reference</b></p>
+            </td>
+            <td width="427" valign="top">
+              <p>LwM2M-DMSE-001-C-M</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="156" valign="top">
+              <p><b>Tool</b></p>
+            </td>
+            <td width="427" valign="top">
+              <p>LwM2M Conformance Tester_TTA_v1.0</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="156" valign="top">
+              <p><b>Test code</b></p>
+            </td>
+            <td width="427" valign="top">
+              <p>ACK-2.05&nbsp;&nbsp; MID=value, Token=value, OptionSet={"Content-Format":"application/vnd.oma.lwm2m+tlv"}, payload</p>
+            </td>
+          </tr>
+          <tr>
+            <td width="156" valign="top">
+              <p><b>Preconditions</b></p>
+            </td>
+            <td width="427" valign="top">
+              <ul>
+                <li>Equipment:
+                  <ul style="list-style-type: circle;" data-mce-style="list-style-type: circle;">
+                    <li>1 LwM2M client(DUT) / 1 LwM2M server(Tester)</li>
+                  </ul>
+                </li>
+                <li>State:
+                  <ul style="list-style-type: circle;" data-mce-style="list-style-type: circle;">
+                    <li>The DUT has the Objects and Object Instances(Mandatory and Optional).</li>
+                    <li>The DUT and Tester support ‘tlv’ content format.</li>
+                    <li>The DUT is registered to the Tester with No SEC mode.</li>
+                  </ul>
+                </li>
+                <li>Continuation of / Can be tested at the same time as:
+                  <ul style="list-style-type: circle;" data-mce-style="list-style-type: circle;">
+                    <li>LwM2M-1.0-con-CR-001 – Verify that the DUT can be registered with a message including URI-Path and Query Parameters (endpoint name, lifetime)</li>
+                  </ul>
+                </li>
+                <li>Prerequisite for this test:
+                  <ul style="list-style-type: circle;" data-mce-style="list-style-type: circle;">
+                    <li>None</li>
+                  </ul>
+                </li>
+                <li>Applicability:
+                  <ul style="list-style-type: circle;" data-mce-style="list-style-type: circle;">
+                    <li>ICS<br>
+                      - 5-1. Support of “Read” operation</li>
+                    <li>IXIT&nbsp; <br>
+                      - Object Instances of Mandatory Objects(LwM2M Server and &nbsp;&nbsp;<br>
+                      &nbsp;Device)<br>
+                      - Endpoint name, lifetime <br>
+                      - IP Address, Port Number</li>
+                  </ul>
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td width="156" valign="top">
+              <p><b>Test Procedure</b></p>
+            </td>
+            <td width="427" valign="top">
+              <ol>
+                <li>The Tester send ‘READ’ message(CoAP/GET) to the DUT.<br>
+                  (GET /1/, LwM2M Server)</li>
+                <li>The DUT send response message(2.05 Content).<br>
+                  (The Object Instance(s) correspond to the IXIT)<br>
+                  &lt; ACK-2.05&nbsp;&nbsp; MID=value, Token=value, OptionSet={"Content-Format":"application/vnd.oma.lwm2m+tlv"}, payload&gt;</li>
+                <li>The Tester send ‘READ’ message(CoAP/GET) to the DUT.<br>
+                  (GET /3/, Device)</li>
+                <li>The DUT send response message(2.05 Content).<br>
+                  (The Object Instance(s) correspond to the IXIT).<br>
+                  &lt; ACK-2.05&nbsp;&nbsp; MID=value, Token=value, OptionSet={"Content-Format":"application/vnd.oma.lwm2m+tlv"}, payload&gt;</li>
+              </ol>
+            </td>
+          </tr>
+          <tr>
+            <td width="156" valign="top">
+              <p><b>Pass-Criteria</b></p>
+            </td>
+            <td width="427" valign="top">
+              <p>Verify that the <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="DUT" data-mce-index="0">DUT</span> properly returned the object instances to the Tester.</p>
+              <ol>
+                <li>The DUT returned all of the object instance(s) of LwM2M Server object.</li>
+              </ol>
+              <p>The <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="DUT" data-mce-index="0">DUT</span> returned all of the object instance(<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="s" data-mce-index="1">s</span>) of Device object. <br>
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section>
+    <h2>pasted with format</h2>
+    <p>paragraph</p>
+    <div align="center">
+      <table class="MsoNormalTable" style="border-collapse: collapse; border: none;" data-mce-style="border-collapse: collapse; border: none;" width="0" cellspacing="0" cellpadding="0" border="1">
+        <tbody>
+          <tr style="page-break-inside: avoid;" data-mce-style="page-break-inside: avoid;">
+            <td style="width: 117.0pt; border: solid windowtext 1.0pt; background: #CCFFCC; padding: 0in 5.4pt 0in 5.4pt;" data-mce-style="width: 117.0pt; border: solid windowtext 1.0pt; background: #CCFFCC; padding: 0in 5.4pt 0in 5.4pt;" width="156" valign="top">
+              <p style="margin: 2pt 0in; font-size: 9pt; font-family: 'Times New Roman', serif; font-weight: bold;" data-mce-style="margin: 2pt 0in; font-size: 9pt; font-family: 'Times New Roman', serif; font-weight: bold;">Test Case Id</p>
+            </td>
+            <td style="width: 4.45in; border: solid windowtext 1.0pt; border-left: none; background: #FFFFCC; padding: 0in 5.4pt 0in 5.4pt;" data-mce-style="width: 4.45in; border: solid windowtext 1.0pt; border-left: none; background: #FFFFCC; padding: 0in 5.4pt 0in 5.4pt;" width="427" valign="top">
+              <p style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;">LwM2M-1.0-con-DMSE-001</p>
+            </td>
+          </tr>
+          <tr style="page-break-inside: avoid;" data-mce-style="page-break-inside: avoid;">
+            <td style="width: 117.0pt; border: solid windowtext 1.0pt; border-top: none; background: #CCFFCC; padding: 0in 5.4pt 0in 5.4pt;" data-mce-style="width: 117.0pt; border: solid windowtext 1.0pt; border-top: none; background: #CCFFCC; padding: 0in 5.4pt 0in 5.4pt;" width="156" valign="top">
+              <p style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;"><b>Test Objecta(DUT)</b></p>
+            </td>
+            <td style="width: 4.45in; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; background: #FFFFCC; padding: 0in 5.4pt 0in 5.4pt;" data-mce-style="width: 4.45in; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; background: #FFFFCC; padding: 0in 5.4pt 0in 5.4pt;" width="427" valign="top">
+              <p style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;">LwM2M Client device under test</p>
+            </td>
+          </tr>
+          <tr style="page-break-inside: avoid;" data-mce-style="page-break-inside: avoid;">
+            <td style="width: 117.0pt; border: solid windowtext 1.0pt; border-top: none; background: #CCFFCC; padding: 0in 5.4pt 0in 5.4pt;" data-mce-style="width: 117.0pt; border: solid windowtext 1.0pt; border-top: none; background: #CCFFCC; padding: 0in 5.4pt 0in 5.4pt;" width="156" valign="top">
+              <p style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;"><b>Test Case Description</b></p>
+              <p style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;"><b>(Test Purpose)</b></p>
+            </td>
+            <td style="width: 4.45in; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; background: #FFFFCC; padding: 0in 5.4pt 0in 5.4pt;" data-mce-style="width: 4.45in; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; background: #FFFFCC; padding: 0in 5.4pt 0in 5.4pt;" width="427" valign="top">
+              <p style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;">Verify that the DUT(LwM2M Client) can respond properly to the ‘READ’ message from the Tester(LwM2M Server). For all of the readable mandatory objects(LwM2M Server and Device) <span style="color: #0070c0;" data-mce-style="color: #0070c0;">&nbsp;</span></p>
+            </td>
+          </tr>
+          <tr style="page-break-inside: avoid;" data-mce-style="page-break-inside: avoid;">
+            <td style="width: 117.0pt; border: solid windowtext 1.0pt; border-top: none; background: #CCFFCC; padding: 0in 5.4pt 0in 5.4pt;" data-mce-style="width: 117.0pt; border: solid windowtext 1.0pt; border-top: none; background: #CCFFCC; padding: 0in 5.4pt 0in 5.4pt;" width="156" valign="top">
+              <p style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;"><b>Specification Reference</b></p>
+            </td>
+            <td style="width: 4.45in; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; background: #FFFFCC; padding: 0in 5.4pt 0in 5.4pt;" data-mce-style="width: 4.45in; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; background: #FFFFCC; padding: 0in 5.4pt 0in 5.4pt;" width="427" valign="top">
+              <p style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;">Section 5.4.1</p>
+            </td>
+          </tr>
+          <tr style="page-break-inside: avoid;" data-mce-style="page-break-inside: avoid;">
+            <td style="width: 117.0pt; border: solid windowtext 1.0pt; border-top: none; background: #CCFFCC; padding: 0in 5.4pt 0in 5.4pt;" data-mce-style="width: 117.0pt; border: solid windowtext 1.0pt; border-top: none; background: #CCFFCC; padding: 0in 5.4pt 0in 5.4pt;" width="156" valign="top">
+              <p style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;"><b>SCR Reference</b></p>
+            </td>
+            <td style="width: 4.45in; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; background: #FFFFCC; padding: 0in 5.4pt 0in 5.4pt;" data-mce-style="width: 4.45in; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; background: #FFFFCC; padding: 0in 5.4pt 0in 5.4pt;" width="427" valign="top">
+              <p style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;">LwM2M-DMSE-001-C-M</p>
+            </td>
+          </tr>
+          <tr style="page-break-inside: avoid;" data-mce-style="page-break-inside: avoid;">
+            <td style="width: 117.0pt; border: solid windowtext 1.0pt; border-top: none; background: #CCFFCC; padding: 0in 5.4pt 0in 5.4pt;" data-mce-style="width: 117.0pt; border: solid windowtext 1.0pt; border-top: none; background: #CCFFCC; padding: 0in 5.4pt 0in 5.4pt;" width="156" valign="top">
+              <p style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;"><b>Tool</b></p>
+            </td>
+            <td style="width: 4.45in; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; background: #FFFFCC; padding: 0in 5.4pt 0in 5.4pt;" data-mce-style="width: 4.45in; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; background: #FFFFCC; padding: 0in 5.4pt 0in 5.4pt;" width="427" valign="top">
+              <p style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;">LwM2M Conformance Tester_TTA_v1.0</p>
+            </td>
+          </tr>
+          <tr style="page-break-inside: avoid;" data-mce-style="page-break-inside: avoid;">
+            <td style="width: 117.0pt; border: solid windowtext 1.0pt; border-top: none; background: #CCFFCC; padding: 0in 5.4pt 0in 5.4pt;" data-mce-style="width: 117.0pt; border: solid windowtext 1.0pt; border-top: none; background: #CCFFCC; padding: 0in 5.4pt 0in 5.4pt;" width="156" valign="top">
+              <p style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;"><b>Test code</b></p>
+            </td>
+            <td style="width: 4.45in; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; background: #FFFFCC; padding: 0in 5.4pt 0in 5.4pt;" data-mce-style="width: 4.45in; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; background: #FFFFCC; padding: 0in 5.4pt 0in 5.4pt;" width="427" valign="top">
+              <p style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;">ACK-2.05&nbsp;&nbsp; MID=value, Token=value, OptionSet={"Content-Format":"application/vnd.oma.lwm2m+tlv"}, payload</p>
+            </td>
+          </tr>
+          <tr style="page-break-inside: avoid;" data-mce-style="page-break-inside: avoid;">
+            <td style="width: 117.0pt; border: solid windowtext 1.0pt; border-top: none; background: #CCFFCC; padding: 0in 5.4pt 0in 5.4pt;" data-mce-style="width: 117.0pt; border: solid windowtext 1.0pt; border-top: none; background: #CCFFCC; padding: 0in 5.4pt 0in 5.4pt;" width="156" valign="top">
+              <p style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;"><b>Preconditions</b></p>
+            </td>
+            <td style="width: 4.45in; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; background: #FFFFCC; padding: 0in 5.4pt 0in 5.4pt;" data-mce-style="width: 4.45in; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; background: #FFFFCC; padding: 0in 5.4pt 0in 5.4pt;" width="427" valign="top">
+              <ul style="margin-bottom: 0in; margin-top: 2.66667px;" data-mce-style="margin-bottom: 0in; margin-top: 2.66667px;">
+                <li style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;">Equipment:
+                  <ul style="list-style-type: circle; margin-bottom: 0in; margin-top: 2.66667px;" data-mce-style="list-style-type: circle; margin-bottom: 0in; margin-top: 2.66667px;">
+                    <li style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;">1 LwM2M client(DUT) / 1 LwM2M server(Tester)</li>
+                  </ul>
+                </li>
+                <li style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;">State:
+                  <ul style="list-style-type: circle; margin-bottom: 0in; margin-top: 2.66667px;" data-mce-style="list-style-type: circle; margin-bottom: 0in; margin-top: 2.66667px;">
+                    <li style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;">The DUT has the Objects and Object Instances(Mandatory and Optional).</li>
+                    <li style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;">The DUT and Tester support ‘tlv’ content format.</li>
+                    <li style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;">The DUT is registered to the Tester with No SEC mode.</li>
+                  </ul>
+                </li>
+                <li style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;">Continuation of / Can be tested at the same time as:
+                  <ul style="list-style-type: circle; margin-bottom: 0in; margin-top: 2.66667px;" data-mce-style="list-style-type: circle; margin-bottom: 0in; margin-top: 2.66667px;">
+                    <li style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;">LwM2M-1.0-con-CR-001 – Verify that the DUT can be registered with a message including URI-Path and Query Parameters (endpoint name, lifetime)</li>
+                  </ul>
+                </li>
+                <li style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;">Prerequisite for this test:
+                  <ul style="list-style-type: circle; margin-bottom: 0in; margin-top: 2.66667px;" data-mce-style="list-style-type: circle; margin-bottom: 0in; margin-top: 2.66667px;">
+                    <li style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;">None</li>
+                  </ul>
+                </li>
+                <li style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;">Applicability:
+                  <ul style="list-style-type: circle; margin-bottom: 0in; margin-top: 2.66667px;" data-mce-style="list-style-type: circle; margin-bottom: 0in; margin-top: 2.66667px;">
+                    <li style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;">ICS<br>
+                      - 5-1. Support of “Read” operation</li>
+                    <li style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;">IXIT&nbsp; <br>
+                      - Object Instances of Mandatory Objects(LwM2M Server and &nbsp;&nbsp;<br>
+                      &nbsp;Device)<br>
+                      - Endpoint name, lifetime <br>
+                      - IP Address, Port Number</li>
+                  </ul>
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr style="page-break-inside: avoid;" data-mce-style="page-break-inside: avoid;">
+            <td style="width: 117.0pt; border: solid windowtext 1.0pt; border-top: none; background: #CCFFCC; padding: 0in 5.4pt 0in 5.4pt;" data-mce-style="width: 117.0pt; border: solid windowtext 1.0pt; border-top: none; background: #CCFFCC; padding: 0in 5.4pt 0in 5.4pt;" width="156" valign="top">
+              <p style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;"><b>Test Procedure</b></p>
+            </td>
+            <td style="width: 4.45in; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; background: #FFFFCC; padding: 0in 5.4pt 0in 5.4pt;" data-mce-style="width: 4.45in; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; background: #FFFFCC; padding: 0in 5.4pt 0in 5.4pt;" width="427" valign="top">
+              <ol style="margin-bottom: 0in; margin-top: 2.66667px;" data-mce-style="margin-bottom: 0in; margin-top: 2.66667px;">
+                <li style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;">The Tester send ‘READ’ message(CoAP/GET) to the DUT.<br>
+                  (GET /1/, LwM2M Server)</li>
+                <li style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;">The DUT send response message(2.05 Content).<br>
+                  (The Object Instance(s) correspond to the IXIT)<br>
+                  &lt; ACK-2.05&nbsp;&nbsp; MID=value, Token=value, OptionSet={"Content-Format":"application/vnd.oma.lwm2m+tlv"}, payload&gt;</li>
+                <li style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;">The Tester send ‘READ’ message(CoAP/GET) to the DUT.<br>
+                  (GET /3/, Device)</li>
+                <li style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;">The DUT send response message(2.05 Content).<br>
+                  (The Object Instance(s) correspond to the IXIT).<br>
+                  &lt; ACK-2.05&nbsp;&nbsp; MID=value, Token=value, OptionSet={"Content-Format":"application/vnd.oma.lwm2m+tlv"}, payload&gt;</li>
+              </ol>
+            </td>
+          </tr>
+          <tr style="page-break-inside: avoid;" data-mce-style="page-break-inside: avoid;">
+            <td style="width: 117.0pt; border: solid windowtext 1.0pt; border-top: none; background: #CCFFCC; padding: 0in 5.4pt 0in 5.4pt;" data-mce-style="width: 117.0pt; border: solid windowtext 1.0pt; border-top: none; background: #CCFFCC; padding: 0in 5.4pt 0in 5.4pt;" width="156" valign="top">
+              <p style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;"><b>Pass-Criteria</b></p>
+            </td>
+            <td style="width: 4.45in; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; background: #FFFFCC; padding: 0in 5.4pt 0in 5.4pt;" data-mce-style="width: 4.45in; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; background: #FFFFCC; padding: 0in 5.4pt 0in 5.4pt;" width="427" valign="top">
+              <p style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in; font-size: 10pt; font-family: 'Times New Roman', serif;">&lt;Verify that the DUT properly returned the object instances to the Tester.</p>
+              <ol style="margin-bottom: 0in; margin-top: 2.66667px;" start="5" data-mce-style="margin-bottom: 0in; margin-top: 2.66667px;">
+                <li style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;">The DUT returned all of the object instance(s) of LwM2M Server object.</li>
+                <li style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;" data-mce-style="margin: 2pt 0in 2pt 0px; font-size: 10pt; font-family: 'Times New Roman', serif;">The <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="DUT" data-mce-index="0">DUT</span> returned all of the object instance(<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="s" data-mce-index="1">s</span>) of Device object.</li>
+              </ol>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </section>
 </body>
