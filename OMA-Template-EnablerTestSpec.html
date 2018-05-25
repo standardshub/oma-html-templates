@@ -1,789 +1,833 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Enabler Test Specification for [EnablerName]</title>
-    <meta charset="UTF-8">
-    <script src="http://openmobilealliance.github.io/Tools/builds/respec-oma-common.js"
-            async class="remove">
-    </script>
-
-
-    <script class="remove">
-      var respecConfig = {
-        // for editor use
-        docType: "ETS", // options are BASE, RD, AD, TS, SUP, ETS, ORG
-        subtitle: "File_Name",
-        shortName:  "shortName",
-        otherLinks: [{
-          key: "Other Link",
-          data: [{
-            value: "Link Name",
-            href: "#location"
-          }]
-        }],
-        editors: [{
-          name:       "Editor Name",
-          url:        "http://example.com/",
-          company:    "Editor Company",
-          companyURL: "http://example.org/",
-          mailto:     "editor@example.com",
-          note:       "editor note"
-        }],
-
-        authors: [{
-          name:       "Author Name",
-          url:        "http://example.com/",
-          company:    "Author Company",
-          companyURL: "http://example.org/",
-          mailto:     "author@example.com",
-          note:       "author note"
-        }],
-
-        interactiveLinks: [{
-          name: "Link Name",
-          description: "Link Description",
-          uri: "http://example.com/",
-        },{
-          name: "Second Link Name",
-          description: "Second Link Description",
-          uri: "http://example2.com/",
-        }],
-
-        // for staff only
-        specStatus: "DRAFT", // options are Draft, Candidate, Approved, Historic
-        publishDate: ""
-      };
-    </script>
-  </head>
-
-  <body>
-
-    <!-- start table of content & table of figures -->
-    <section id="toc"></section>
-    <section id="tof"></section>
-    <section id="tot"></section>
-    <!-- /end table of content & table of figures -->
-
-    <!-- start scope -->
-    <section>
-	   <h2>Scope</h2>
-       <p>This document describes in detail available test cases for &lt;Enabler name and version, insert hyperlink to specification pages&gt;.</p>
-       <p>The test cases are split in two categories, conformance and interoperability test cases.</p>
-       <p>The conformance test cases are aimed to verify the adherence to normative requirements described in the technical specifications.</p>
-       <p>The interoperability test cases are aimed to verify that implementations of the specifications work satisfactory.</p>
-       <p>If either conformance or interoperability tests do not exists at the creation of the test specification this part should be marked not available.</p>
-	  </section>
-    <!-- end scope -->
-    <!-- end scope -->
-    <!-- end scope -->
-    <!-- end scope -->
-    <!-- end scope -->
-    <!-- end scope -->
-    <!-- end scope -->
-    <!-- end scope -->
-    <!-- end scope -->
-    <!-- end scope -->
-    <!-- end scope -->
-
-    <!-- start terminology and conventions -->
-    <section>
-      <h2>Terminology and Conventions</h2>
-
-      <section> <!-- start conventions -->
-        <h2>Conventions</h2>
-        <p>The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”,
-        “MAY”, and “OPTIONAL” in this document are to be interpreted as described in [[!RFC2119]].</p>
-        <p>All sections and appendixes, except “Scope” and “Introduction”, are normative, unless they are explicitly
-        indicated to be informative.</p>
-
-        <p>The following numbering scheme is used:</p>
-        <pre>
-            <strong>xxx-y.z-con-number</strong> where:
-                xxx        Name of enabler, e.g. MMS or Browsing
-                y.z        Version of enabler release, e.g. 1.2 or 1.2.1
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Enabler Test Specification for [EnablerName]</title>
+  <meta charset="UTF-8">
+  <script src="http://openmobilealliance.github.io/Tools/builds/respec-oma-common.js" async class="remove"></script>
+  <script class="remove">
+    var respecConfig = {
+                  // for editor use
+                  docType: "ETS", // options are BASE, RD, AD, TS, SUP, ETS, ORG
+                  subtitle: "File_Name",
+                  shortName:  "shortName",
+                  otherLinks: [{
+                    key: "Other Link",
+                    data: [{
+                      value: "Link Name",
+                      href: "#location"
+                    }]
+                  }],
+                  editors: [{
+                    name:       "Editor Name",
+                    url:        "http://example.com/",
+                    company:    "Editor Company",
+                    companyURL: "http://example.org/",
+                    mailto:     "editor@example.com",
+                    note:       "editor note"
+                  }],
+    
+                  authors: [{
+                    name:       "Author Name",
+                    url:        "http://example.com/",
+                    company:    "Author Company",
+                    companyURL: "http://example.org/",
+                    mailto:     "author@example.com",
+                    note:       "author note"
+                  }],
+    
+                  interactiveLinks: [{
+                    name: "Link Name",
+                    description: "Link Description",
+                    uri: "http://example.com/",
+                  },{
+                    name: "Second Link Name",
+                    description: "Second Link Description",
+                    uri: "http://example2.com/",
+                  }],
+    
+                  // for staff only
+                  specStatus: "DRAFT", // options are Draft, Candidate, Approved, Historic
+                  publishDate: ""
+                };
+  </script>
+</head><body><!-- start table of content & table of figures -->
+  <section id="toc"><br data-mce-bogus="1">
+  </section>
+  <section id="tof"></section>
+  <section id="tot"></section>
+  <!-- /end table of content & table of figures -->
+  <p><br>
+  </p>
+  <!-- start scope -->
+  <section>
+    <h2>Scope</h2>
+    <p>This document describes in detail available test cases for &lt;<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="Enabler" data-mce-index="0">Enabler</span> name and version, insert hyperlink to specification pages&gt;.</p>
+    <p>The test cases are split in two categories, conformance and interoperability test cases.</p>
+    <p>The conformance test cases are aimed to verify the adherence to normative requirements described in the technical specifications.</p>
+    <p>The interoperability test cases are aimed to verify that implementations of the specifications work satisfactory.</p>
+    <p>If either conformance or interoperability tests do not exists at the creation of the test specification this part should be marked not available.</p>
+  </section>
+  <!-- end scope -->
+  <p><br>
+  </p>
+  <!-- end scope -->
+  <p><br>
+  </p>
+  <!-- end scope -->
+  <p><br>
+  </p>
+  <!-- end scope -->
+  <p><br>
+  </p>
+  <!-- end scope -->
+  <p><br>
+  </p>
+  <!-- end scope -->
+  <p><br>
+  </p>
+  <!-- end scope -->
+  <p><br>
+  </p>
+  <!-- end scope -->
+  <p><br>
+  </p>
+  <!-- end scope -->
+  <p><br>
+  </p>
+  <!-- end scope -->
+  <p><br>
+  </p>
+  <!-- end scope -->
+  <p><br>
+  </p>
+  <!-- start terminology and conventions -->
+  <section>
+    <h2>Terminology and Conventions</h2>
+    <section><!-- start conventions -->
+      <h2>Conventions</h2>
+      <p>The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in [[!RFC2119]].</p>
+      <p>All sections and appendixes, except “Scope” and “Introduction”, are normative, unless they are explicitly indicated to be informative.</p>
+      <p>The following numbering scheme is used:</p>
+      <pre>            <strong><span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="xxx-y" data-mce-index="1">xxx-y</span>.<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="z-con-number" data-mce-index="2">z-con-number</span></strong> where:
+                <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="xxx" data-mce-index="3">xxx</span>        Name of <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="enabler" data-mce-index="4">enabler</span>, <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="e" data-mce-index="5">e</span>.<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="g" data-mce-index="6">g</span>. <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="MMS" data-mce-index="7">MMS</span> or Browsing
+                <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="y" data-mce-index="8">y</span>.<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="z" data-mce-index="9">z</span>        Version of <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="enabler" data-mce-index="10">enabler</span> release, <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="e" data-mce-index="11">e</span>.<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="g" data-mce-index="12">g</span>. 1.2 or 1.2.1
                 "con"      Indicating this test is a conformance test case
                 number     Leap number for the test case
         </pre>
-        <p>Or</p>
-        <pre>
-          <strong>xxx-y.z-int-number</strong> where:
-                xxx        Name of enabler, e.g. MMS or Browsing
-                y.z        Version of enabler release, e.g. 1.2 or 1.2.1
-                "int"      Indicating this test is a interoperability test case
+      <p>Or</p>
+      <pre>          <strong><span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="xxx-y" data-mce-index="13">xxx-y</span>.<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="z-int-number" data-mce-index="14">z-int-number</span></strong> where:
+                <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="xxx" data-mce-index="15">xxx</span>        Name of <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="enabler" data-mce-index="16">enabler</span>, <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="e" data-mce-index="17">e</span>.<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="g" data-mce-index="18">g</span>. <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="MMS" data-mce-index="19">MMS</span> or Browsing
+                <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="y" data-mce-index="20">y</span>.<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="z" data-mce-index="21">z</span>        Version of <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="enabler" data-mce-index="22">enabler</span> release, <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="e" data-mce-index="23">e</span>.<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="g" data-mce-index="24">g</span>. 1.2 or 1.2.1
+                "<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="int" data-mce-index="25">int</span>"      Indicating this test is a interoperability test case
                 number     Leap number for the test case
         </pre>
-
-		    <aside class="example">
-                <p>If needed, describe or declare using appropriate normative references the additional conventions that are used.</p>
-			    <p><strong>DELETE THIS COMMENT</strong></p>
-		    </aside>
-
-      </section>
-      <!-- /end conventions -->
-      <!-- /end conventions -->
-      <!-- /end conventions -->
-
-      <!-- start definitions -->
-      <section>
-        <h2>Definitions</h2>
-
-        <aside class="example">
-            <p>Add definitions in new rows of the following table as needed.
-              The following examples show how dictionary references should be made as well as locally defined terms.
-              This description list should be maintained in sorted alphabetic order based on the labels of the terms.</p>
-              <p><strong>DELETE THIS COMMENT.</strong></p>
-        </aside>
-
-        <!-- start definition list -->
-        <dl>
-          <dt><dfn>Entity</dfn></dt>
-          <dd>Use definition #1 from [OMADICT].</dd>
-
-          <dt><dfn>Interactive Service</dfn></dt>
-          <dd>Use definition from [OMADICT].</dd>
-
-          <dt><dfn>Loal Term</dfn></dt>
-          <dd>The definition description would be presented directly here.</dd>
-
-        </dl>
-        <p>Kindly consult [[OMADICT]] for more definitions used in this document.</p>
-      </section>
-      <!-- /end definitions -->
-      <!-- /end definitions -->
-      <!-- /end definitions -->
-
-      <!-- start abbreviations -->
-      <section>
-        <h2>Abbreviations</h2>
-
-        <aside class="example">
-            <p>Add abbreviations as needed to the following definition list.
-              No special notation should be made regarding terms copied from the Dictionary.
-              This definition list should be maintained in alphabetic order.</p>
-              <p><strong>DELETE THIS COMMENT.</strong></p>
-        </aside>
-
-        <!-- start abbreviations list -->
-        <dl>
-
-          <dt><abbr title="Implementation  Conformance Specification">ICS</abbr></dt>
-          <dd>Implementation Conformance Specification.</dd>
-
-          <dt><abbr title="Implementation eXtra Information">IXIT</abbr></dt>
-          <dd>Implementation eXtra Information.</dd>
-
-          <dt><abbr title="Open Mobile Alliance">OMA</abbr></dt>
-          <dd>Open Mobile Alliance.</dd>
-
-        </dl>
-        <!-- end abbreviations list-->
-
-        <p>Kindly consult [[OMADICT]] for more abbreviations used in this document.</p>
-      </section>
-      <!-- /end abbreviations -->
-      <!-- /end abbreviations -->
-      <!-- /end abbreviations -->
-
-    </section>
-    <!-- end terminology and conventions -->
-    <!-- end terminology and conventions -->
-    <!-- end terminology and conventions -->
-    <!-- end terminology and conventions -->
-    <!-- end terminology and conventions -->
-    <!-- end terminology and conventions -->
-    <!-- end terminology and conventions -->
-    <!-- end terminology and conventions -->
-    <!-- end terminology and conventions -->
-    <!-- end terminology and conventions -->
-    <!-- end terminology and conventions -->
-
-    <!-- start introduction -->
-    <section class="informative">
-     <h2>Introduction</h2>
-		    <aside class="example">
-                <p>This chapter should describe the introduction to the test cases specified in the document.</p>
-                <p><strong>DELETE THIS COMMENT.</strong></p>
-		    </aside>
-
-        <p>The purpose of this document is to provide test cases for &lt;xxx&gt; Enabler Release &lt;y.z&gt;.</p>
-
-		    <aside class="example">
-                <p>This part should give some introduction for the need of verification.</p>
-                <p><strong>DELETE THIS COMMENT.</strong></p>
-		    </aside>
-
-        <p>The implementation of some features is optional for the Clients and/or the Servers in the &lt;xxx&gt; Enabler.  The tests associated
-        with these optional features are marked as "(Includes Optional Features)" in the test specification.</p>
-
-     	  <aside class="example">
-          <p>List the items needed to test the enabler, e.g. The following items on an overall level are needed to adequately
-          test the &lt;xxx&gt; enabler:</p>
-          <ul>
-              <li>An origin server configured to support….</li>
-              <li>A web page providing a link…</li>
-              <li>[Optional] A web page providing a link…</li>
-          </ul>
-          <p>Detailed info will be put in the specific test cases description.</p>
-          <p><strong>DELETE THIS COMMENT.</strong></p>
-		    </aside>
-           <aside class="example">
-             <p>If possible this part of the document should describe any protocols used by this enabler, e.g.
-             The &lt;xxx&gt; enabler tests are carried out using &lt;yyy&gt; and/or &lt;zzz&gt; protocols.</p>
-             <p><strong>DELETE THIS COMMENT.</strong></p>
-			   </aside>
-	  </section>
-  <!-- /end introduction -->
-  <!-- /end introduction -->
-  <!-- /end introduction -->
-  <!-- /end introduction -->
-  <!-- /end introduction -->
-  <!-- /end introduction -->
-  <!-- /end introduction -->
-  <!-- /end introduction -->
-  <!-- /end introduction -->
-  <!-- /end introduction -->
-  <!-- /end introduction -->
-
-   <!-- start Conformance Test Cases -->
- 	 <section>
-		<h2>&lt;xxx&gt; Conformance Test Cases</h2>
-				<aside class="example">
-                   <p>There should be a chapter for conformance tests, under this chapter the test cases may be grouped in best
-                   possible way according to e.g. feature or groups of features to make the document easy to read and use.</p>
-                   <p>Test Cases should not address anything not explicitly mentioned in the Specifications or ETR. They should
-                   also not address any quality of service issues. The Pass/Fail verdict for a Test Case should be clearly
-                   specified and not be open to interpretation.</p>
-                   <p>If there are no conformance test cases available, please indicate with 'Not Available'.</p>
-                   <p>If information for a heading of the test case is not available, please indicate that with 'Not Available'
-                   in the appropriate row of a test case.</p>
-                   <p>Section n.1 shows example on headings for one test case.  It should be replicated, as needed, for each
-                   test case.</p>
-                   <p>If the test case tests one or more optional SCR Items, the title of the test case should have "(Includes
-                   Optional Features)" string appended to it.</p>
-                   <p><strong>DELETE THIS COMMENT.</strong></p>
-				</aside>
-
-      <!-- start Conformance Test Cases Level 2 -->
-			<section>
-				  <h2>&lt;xxx-y.z-con-number&gt;</h2>
-					<aside class="example">
-                       <p>This section lists the steps needed for a conformance test case.</p>
-                       <p><strong>DELETE THIS COMMENT.</strong></p>
-					</aside>
-			    <table>
-             <caption>Test Information for &lt;yyy&gt; Conformance Test</caption>
-			       <tbody>
-				        <tr>
-				           <td>Test Case Id</td>
-				           <td>&lt;xxx-y.z-con-number, e.g. IMPS-1.2-con-001.&gt;</td>
-				       </tr>
-				       <tr>
-				           <td>Test Object</td>
-				           <td>&lt;Client and/or Server device under test.&gt;</td>
-				       </tr>
-				       <tr>
-				           <td>Test Case Description</td>
-				           <td>&lt;Short description of the test case, e.g. To test delivery functionality.&gt;</td>
-				       </tr>
-				       <tr>
-				           <td>Specification Reference</td>
-				           <td>&lt;[REFERENCE EXAMPLE 1] Chapter x.&gt;</td>
-				       </tr>
-				       <tr>
-				           <td>SCR Reference</td>
-				           <td>&lt;Reference to explicitly tested  SCR items, e.g. xxx-C-001-M.&gt;
-
-  				            <aside class="example">
-                         <p>The SCRs listed in this section should directly apply to
-                          this test case's Test Object. Listing of the SCRs tested
-                          implicitly should be avoided.</p>
-                          <p><strong>DELETE THIS COMMENT.</strong></p>
-				              </aside>
-                  </td>
-				       </tr>
-				       <tr>
-				          <td>Tool</td>
-				          <td>&lt;List any tool including version available for this test case, if any.&gt;</td>
-				       </tr>
-				       <tr>
-				          <td>Test code</td>
-				          <td>&lt;List any code including version available for this test case, if any.&gt;</td>
-				       </tr>
-				       <tr>
-				          <td>Preconditions</td>
-				          <td>
-                    &lt;List the preconditions needed to execute the test case, e.g.
-                    <ul>
-                        <li>Equipment:</li>
-                           <ul>
-                              <li>2 clients (A, B) / 1 server.</li>
-                              <li>Functioning SAP with the 2 user accounts (A, B) existing on it.</li>
-                           </ul>
-                        <li>State:</li>
-                           <ul>
-                              <li>Both clients are logged in.</li>
-                              <li>Both client and server support the same type of the delivery mechanism (Push or Notify/Get or both).</li>
-                              <li>Both clients and server support Delivery Report functionality.</li>
-                              <li>Client A is capable of displaying a successful delivery report.</li>
-                           </ul>
-                        <li>Continuation of / Can be tested at the same time as:</li>
-                           <ul>
-                              <li>IMPS-1.1-int-IMSE-001 - Verify that a message sent by one client is delivered to the other client.</li>
-                           </ul>
-                        <li>Prerequisite for this test:</li>
-                           <ul>
-                              <li>IMPS-1.1-int-IMSE-001 - Verify that a message sent by one client is delivered to the other client&gt;</li>
-                                    <p>&lt;Optionally ICS (Implementation Conformance Statement) / IXIT (Implementation eXtra Information for
-                                    Testing) information can be added here.&gt;</p>
-                           </ul>
-                              <li>Applicability:</li>
-                           <ul>
-                              <li>ics_PSK_TLS AND ics_3GPP.</li>
-                              <li>ixit_mAC_KEY_ID.&gt;</li>
-                           </ul>
-                    </ul>
-                  </td>
-				        </tr>
-				        <tr>
-				          <td>Test Procedure</td>
-				          <td>&lt;Describe the procedure to execute the test case, e.g.
-                    <ol>
-                        <li>User sends MMS message with terminal A to terminal B.</li>
-                        <li>The message should be received in terminal B.</li>
-                    </ol>
-                    Any additional tips and tricks to the test procedure can also be added here.&gt;
-                  </td>
-				        </tr>
-				        <tr>
-				           <td>Pass-Criteria</td>
-				           <td>&lt;Describe the criteria for passing the test case, e.g.<br />
-                    <ol>
-                        <li>MMS is received in terminal B.</li>
-                        <li>MMS is readable.&gt;</li>
-                    </ol>
-                   </td>
-				       </tr>
-			   </tbody>
-			  </table>
-	    </section>
-    <!-- end Conformance Test Cases Level 2 -->
-    <!-- end Conformance Test Cases Level 2 -->
-    <!-- end Conformance Test Cases Level 2 -->
-
-  </section>
-  <!-- /end Conformance Test Cases -->
-  <!-- /end Conformance Test Cases -->
-  <!-- /end Conformance Test Cases -->
-  <!-- /end Conformance Test Cases -->
-  <!-- /end Conformance Test Cases -->
-  <!-- /end Conformance Test Cases -->
-  <!-- /end Conformance Test Cases -->
-  <!-- /end Conformance Test Cases -->
-  <!-- /end Conformance Test Cases -->
-  <!-- /end Conformance Test Cases -->
-  <!-- /end Conformance Test Cases -->
-  <!-- /end Conformance Test Cases -->
-
-   <!-- start Interoperability Test Cases -->
- 	 <section>
-		<h2>&lt;xxx&gt; Interoperability Test Cases</h2>
-				<aside class="example">
-                   <p>There should be a chapter for interoperability tests. Under this chapter the test cases should be grouped
-                   according to the ETR feature key grouping as specified in the ETR document for the Enabler. This is done
-                   for the ease of association of the test cases to the corresponding ETR requirements and the SCRs.</p>
-                   <p>Test Cases should not address anything not explicitly mentioned in the Specifications or ETR. They should
-                   also not address any quality of service issues. The Pass/Fail verdict for a Test Case should be clearly
-                   specified and not be open to interpretation.</p>
-                   <p>If there are no conformance test cases available, please indicate with 'Not Available'.</p>
-                   <p>If information for a heading of the test case is not available, please indicate that with 'Not Available'
-                   in the appropriate row of a test case.</p>
-                   <p>Section n.1 shows example on headings for one test case.  It should be replicated, as needed, for each
-                   test case.</p>
-                   <p>If the test case tests one or more optional SCR Items, the title of the test case should have "(Includes
-                   Optional Features)" string appended to it.</p>
-                   <p><strong>DELETE THIS COMMENT.</strong></p>
-				</aside>
-
-      <!-- start Level 2 -->
-			<section>
-				<h2>&lt;xxx-y.z-int-number&gt;</h2>
-					<aside class="example">
-                       <p>This section lists the steps needed for a interoperability test case.</p>
-                       <p><strong>DELETE THIS COMMENT.</strong></p>
-					</aside>
-			<table>
-              <caption>Test Information for &lt;zzz&gt; Interoperability Test</caption>
-			  <tbody>
-				<tr>
-				  <td>Test Case Id</td>
-				  <td>&lt;xxx-y.z-int-number, e.g. IMPS-1.2-int-001.&gt;</td>
-				</tr>
-				<tr>
-				  <td>Test Object</td>
-				  <td>&lt;Client and/or Server device under test.&gt;</td>
-				</tr>
-				<tr>
-				  <td>Test Case Description</td>
-				  <td>&lt;Short description of the test case, e.g. To test delivery functionality.&gt;</td>
-				</tr>
-				<tr>
-				  <td>Specification Reference</td>
-				  <td>&lt;[REFERENCE EXAMPLE 1] Chapter x.&gt;</td>
-				</tr>
-				<tr>
-				  <td>SCR Reference</td>
-				  <td>&lt;Reference to explicitly tested  SCR items, e.g. xxx-C-001-M.&gt;
-  				<aside class="example">
-                  <p>The SCRs listed in this section should directly apply to
-                  this test case's Test Object and to the ETR
-                  requirement(s) listed in the below ETR Reference section.
-                  Listing of the SCRs tested implicitly should be avoided.</p>
-                  <p><strong>DELETE THIS COMMENT.</strong></p>
-				  </aside>
-          </td>
-				</tr>
-				<tr>
-				  <td>ETR Reference</td>
-				  <td>&lt;Reference to the applicable ETR requirement (s), e.g. xxx-04&gt;
-  				<aside class="example">
-                <p>The ETR requirement(s) listed in this section should
-                directly apply to this test case's Test Object.</p>
-                <p><strong>DELETE THIS COMMENT.</strong></p>
-				  </aside>
-          </td>
-				</tr>
-				<tr>
-				  <td>Tool</td>
-				  <td>&lt;List any tool including version available for this test case, if any.&gt;</td>
-				</tr>
-				<tr>
-				  <td>Test code</td>
-				  <td>&lt;List any code including version available for this test case, if any.&gt;</td>
-				</tr>
-				<tr>
-				  <td>Preconditions</td>
-				  <td>
-                    &lt;List the preconditions needed to execute the test case, e.g.
-                    <ul>
-                        <li>Equipment:</li>
-                          <ul>
-                            <li>2 clients (A, B) / 1 server.</li>
-                            <li>Functioning SAP with the 2 user accounts (A, B) existing on it.</li>
-                          </ul>
-                        <li>State:</li>
-                          <ul>
-                            <li>Both clients are logged in.</li>
-                            <li>Both client and server support the same type of the delivery mechanism (Push or Notify/Get or both).</li>
-                            <li>Both clients and server support Delivery Report functionality.</li>
-                            <li>Client A is capable of displaying a successful delivery report.</li>
-                          </ul>
-                        <li>Continuation of / Can be tested at the same time as:</li>
-                          <ul>
-                            <li>IMPS-1.1-int-IMSE-001 - Verify that a message sent by one client is delivered to the other client.</li>
-                          </ul>
-                        <li>Prerequisite for this test:</li>
-                          <ul>
-                            <li>IMPS-1.1-int-IMSE-001 - Verify that a message sent by one client is delivered to the other client.&gt;
-                          </ul>
-                    </ul>
-          </td>
-				</tr>
-				<tr>
-				  <td>Test Procedure</td>
-				  <td>&lt;Describe the procedure to execute the test case, e.g.
-                    <ol>
-                        <li>User sends MMS message with terminal A to terminal B.</li>
-                        <li>The message should be received in terminal B.</li>
-                    </ol>
-                    Any additional tips and tricks to the test procedure can also be added here.&gt;
-                  </td>
-				</tr>
-				<tr>
-				  <td>Pass-Criteria</td>
-				  <td>&lt;Describe the criteria for passing the test case, e.g.<br />
-                    <ol>
-                        <li>MMS is received in terminal B.</li>
-                        <li>MMS is readable.&gt;</li>
-                    </ol>
-          </td>
-				</tr>
-			  </tbody>
-			</table>
-	    </section>
-    <!-- /end Level 2 -->
-    <!-- /end Level 2 -->
-    <!-- /end Level 2 -->
-
-   </section>
-   <!-- end Interoperability Test Cases -->
-   <!-- end Interoperability Test Cases -->
-   <!-- end Interoperability Test Cases -->
-   <!-- end Interoperability Test Cases -->
-   <!-- end Interoperability Test Cases -->
-   <!-- end Interoperability Test Cases -->
-   <!-- end Interoperability Test Cases -->
-   <!-- end Interoperability Test Cases -->
-   <!-- end Interoperability Test Cases -->
-   <!-- end Interoperability Test Cases -->
-   <!-- end Interoperability Test Cases -->
-   <!-- end Interoperability Test Cases -->
-   <!-- end Interoperability Test Cases -->
-   <!-- end Interoperability Test Cases -->
-
-  <!-- start Conformance Test Case applicability appendix -->
-	<section class="appendix">
-		<h2>&lt;&lt;Optional&gt;&gt; Conformance Test Case applicability</h2>
-
-        <!-- start Introduction -->
-				<section>
-					<h2>Introduction</h2>
-                        <p>This section shall help implementers of the &lt;&lt;xxx&gt;&gt; Enabler to select appropriate Conformance test cases that are
-                        applicable to the features implemented.</p>
-                        <p>This appendix lists all test cases testing only mandatory features,
-                        ICS, IXIT and a mapping from ICS/IXIT to applicable test cases as defined by the Open Mobile Alliance.</p>
-                </section>
-                <!-- end Introduction -->
-
-
-
-
-          <!-- start Test Cases testing only mandatory features -->
-			    <section>
-					<h2>Test Cases testing only mandatory features</h2>
-						<p>These Conformance test cases are independent from any applicability, are testing only mandatory SCRs and
-                        SHALL be run with every implementation.</p>
-                        <table>
-                        <caption>Test Cases testing only mandatory features</caption>
-			                     <thead>
-				                      <tr>
-				                        <td>Test Case</td>
-				                      </tr>
-			                     </thead>
-			                     <tbody>
-				                      <tr>
-				                        <td>SUPL-1.0-con-000 - Compatible Versions</td>
-				                      </tr>
-			                     </tbody>
-			                  </table>
-          </section>
-          <!-- /end Test Cases testing only mandatory features -->
-          <!-- /end Test Cases testing only mandatory features -->
-          <!-- /end Test Cases testing only mandatory features -->
-
-          <!-- start Applicability -->
-			    <section>
-					<h2>Applicability</h2>
-
-                <!-- start client ics -->
-                <section>
-						        <h2>Client ICS</h2>
-						        <table>
-            	           <caption>Client ICS</caption>
-						              <thead>
-				                     <tr>
-				                       <td>ICS</td>
-				                       <td>Description</td>
-				                       <td>SCR Reference(s)</td>
-				                       <td>Supported (yes/no)</td>
-				                    </tr>
-			                    </thead>
-			                    <tbody>
-				                    <tr>
-				                       <td>ics_SLP_SessionID _Ipv4.</td>
-				                       <td>IPV4 in SLP session ID supported.</td>
-				                       <td>&nbsp;</td>
-				                       <td>&nbsp;</td>
-				                    </tr>
-			                    </tbody>
-			              </table>
-                </section>
-                <!-- /end client ics -->
-                <!-- /end client ics -->
-                <!-- /end client ics -->
-
-                <!-- start Client IXIT -->
-                <section>
-                    <h2>Client IXIT</h2>
-			              <table>
-                        <caption>Client IXIT</caption>
-			                  <thead>
-				                    <tr>
-				                        <td>IXIT</td>
-				                        <td>Description</td>
-				                        <td>Unit &lt;&lt;(Range of values)&gt;&gt;</td>
-				                        <td>Value</td>
-				                    </tr>
-			                  </thead>
-			                  <tbody>
-				                    <tr>
-				                        <td>ixit_timer_UT1.</td>
-				                        <td>Value of Timer UT1.</td>
-				                        <td>seconds (5 to 25).</td>
-				                        <td>&nbsp;</td>
-				                    </tr>
-			                  </tbody>
-			              </table>
-                </section>
-                <!-- end Client IXIT -->
-                <!-- end Client IXIT -->
-                <!-- end Client IXIT -->
-
-                <!-- start Server ICS -->
-                <section>
-                    <h2>Server ICS</h2>
-			              <table>
-                        <caption>Server ICS</caption>
-			                  <thead>
-				                   <tr>
-				                      <td>ICS</td>
-				                      <td>Description</td>
-				                      <td>SCR Reference(s)</td>
-				                      <td>Supported (yes/no)</td>
-				                   </tr>
-			                  </thead>
-			                  <tbody>
-				                   <tr>
-				                      <td>ics_SLP_SessionID _Ipv4.</td>
-				                      <td>IPV4 in SLP session ID supported.</td>
-				                      <td>&nbsp;</td>
-				                      <td>&nbsp;</td>
-				                   </tr>
-			                  </tbody>
-			              </table>
-                </section>
-                <!-- end Server ICS -->
-                <!-- end Server ICS -->
-                <!-- end Server ICS -->
-
-                <!-- start Server IXIT -->
-                <section>
-                    <h2>Server IXIT</h2>
-			              <table>
-                        <caption>Server IXIT</caption>
-			                  <thead>
-				                   <tr>
-				                      <td>IXIT</td>
-				                      <td>Description</td>
-				                      <td>Unit &lt;&lt;(Range of values)&gt;&gt;</td>
-				                      <td>Value</td>
-				                   </tr>
-			                  </thead>
-			                  <tbody>
-				                   <tr>
-				                      <td>ixit_timer_ST1.</td>
-				                      <td>Value of Timer ST1.</td>
-				                      <td>seconds (5 to 25).</td>
-				                      <td>&nbsp;</td>
-				                   </tr>
-			                 </tbody>
-			              </table>
-                </section>
-                <!-- end Server IXIT -->
-                <!-- end Server IXIT -->
-                <!-- end Server IXIT -->
-
-            </section>
-            <!-- end Applicability -->
-            <!-- end Applicability -->
-            <!-- end Applicability -->
-
-           <!-- start ICS to test case mapping -->
-            <section>
-                <h2>ICS to test case mapping</h2>
-                <p>According to the ICS described above the applicable test cases can be derived from the following table.</p>
-			          <table>
-                    <caption>ICS to test case mapping</caption>
-			              <thead>
-				               <tr>
-				                  <td>Applicability</td>
-				                  <td>Test Cases</td>
-				               </tr>
-			              </thead>
-			              <tbody>
-				               <tr>
-				                  <td>ics_MT_SMS AND ics_3GPP.</td>
-				                  <td>SUPL-1.0-con-014  - Incorrect MT SMS message content.</td>
-				               </tr>
-			              </tbody>
-			          </table>
-            </section>
-            <!-- end ICS to test case mapping -->
-            <!-- end ICS to test case mapping -->
-            <!-- end ICS to test case mapping -->
-  </section>
-  <!-- end Conformance Test Case applicability appendix -->
-  <!-- end Conformance Test Case applicability appendix -->
-  <!-- end Conformance Test Case applicability appendix -->
-  <!-- end Conformance Test Case applicability appendix -->
-  <!-- end Conformance Test Case applicability appendix -->
-  <!-- end Conformance Test Case applicability appendix -->
-  <!-- end Conformance Test Case applicability appendix -->
-  <!-- end Conformance Test Case applicability appendix -->
-  <!-- end Conformance Test Case applicability appendix -->
-  <!-- end Conformance Test Case applicability appendix -->
-  <!-- end Conformance Test Case applicability appendix -->
-  <!-- end Conformance Test Case applicability appendix -->
-  <!-- end Conformance Test Case applicability appendix -->
-  <!-- end Conformance Test Case applicability appendix -->
-  <!-- end Conformance Test Case applicability appendix -->
-  <!-- end Conformance Test Case applicability appendix -->
-
-  <!-- start additional appendix -->
-  <!-- note that there is no need for appendix class -->
-	<section>
-		<h2> Additional Appendix</h2>
-
       <aside class="example">
-				<p>If needed, add annex to provide additional information to support the document.</p>
-				<p>In general, this information should be informative, as normative material should be contained in
-				the primary body of the document.</p>
-
-				<p>Note that the styles for the headers in the appendix (App1, App2, App3) are different than the main body.</p>
-				<p>The use below is intended to validate the styles to be used. Remove if not needed.</p>
-				<p><strong>DELETE THIS COMMENT</strong></p>
-			</aside>
-
-        <!-- start App Headers -->
-				<section>
-					<h2>App Headers</h2>
-						<p> Text goes here.</p>
-
-          <!-- start More Headers -->
-					<section>
-					<h2>More Headers</h2>
-						<p> More text goes here.</p>
-
-            <!-- start Even More Headers -->
-						<section>
-						<h2>Even More Header</h2>
-							<p> More text goes here.</p>
-							<figure id="fig1_example">
-							   <img src="images/fig1_example.png" />
-							   <figcaption>Example Figure.</figcaption>
-							</figure>
-						</section>
-            <!-- end Even More Headers -->
-					</section>
-          <!-- end More Headers -->
-				</section>
-        <!-- end App Headers -->
-	</section>
+        <p>If needed, describe or declare using appropriate normative references the additional conventions that are used.</p>
+        <p><strong>DELETE THIS COMMENT</strong></p>
+      </aside>
+    </section>
+    <!-- /end conventions --> <!-- /end conventions --> <!-- /end conventions --> <!-- start definitions -->
+    <section>
+      <h2>Definitions</h2>
+      <aside class="example">
+        <p>Add definitions in new rows of the following table as needed. The following examples show how dictionary references should be made as well as locally defined terms. This description list should be maintained in sorted alphabetic order based on the labels of the terms.</p>
+        <p><strong>DELETE THIS COMMENT.</strong></p>
+      </aside>
+      <!-- start definition list -->
+      <dl>
+        <dt><dfn>Entity</dfn></dt>
+        <dd>Use definition #1 from [<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="OMADICT" data-mce-index="26">OMADICT</span>].</dd>
+        <dt><dfn>Interactive Service</dfn></dt>
+        <dd>Use definition from [<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="OMADICT" data-mce-index="27">OMADICT</span>].</dd>
+        <dt><dfn><span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="Loal" data-mce-index="28">Loal</span> Term</dfn></dt>
+        <dd>The definition description would be presented directly here.</dd>
+      </dl>
+      <p>Kindly consult [[<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="OMADICT" data-mce-index="29">OMADICT</span>]] for more definitions used in this document.</p>
+    </section>
+    <!-- /end definitions --> <!-- /end definitions --> <!-- /end definitions --> <!-- start abbreviations -->
+    <section>
+      <h2>Abbreviations</h2>
+      <aside class="example">
+        <p>Add abbreviations as needed to the following definition list. No special notation should be made regarding terms copied from the Dictionary. This definition list should be maintained in alphabetic order.</p>
+        <p><strong>DELETE THIS COMMENT.</strong></p>
+      </aside>
+      <!-- start abbreviations list -->
+      <dl>
+        <dt><abbr title="Implementation  Conformance Specification">ICS</abbr></dt>
+        <dd>Implementation Conformance Specification.</dd>
+        <dt><abbr title="Implementation eXtra Information"><span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="IXIT" data-mce-index="30">IXIT</span></abbr></dt>
+        <dd>Implementation <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="eXtra" data-mce-index="31">eXtra</span> Information.</dd>
+        <dt><abbr title="Open Mobile Alliance"><span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="OMA" data-mce-index="32">OMA</span></abbr></dt>
+        <dd>Open Mobile Alliance.</dd>
+      </dl>
+      <!-- end abbreviations list-->
+      <p>Kindly consult [[<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="OMADICT" data-mce-index="33">OMADICT</span>]] for more abbreviations used in this document.</p>
+    </section>
+    <!-- /end abbreviations --> <!-- /end abbreviations --> <!-- /end abbreviations --></section>
+  <!-- end terminology and conventions -->
+  <p><br>
+  </p>
+  <!-- end terminology and conventions -->
+  <p><br>
+  </p>
+  <!-- end terminology and conventions -->
+  <p><br>
+  </p>
+  <!-- end terminology and conventions -->
+  <p><br>
+  </p>
+  <!-- end terminology and conventions -->
+  <p><br>
+  </p>
+  <!-- end terminology and conventions -->
+  <p><br>
+  </p>
+  <!-- end terminology and conventions -->
+  <p><br>
+  </p>
+  <!-- end terminology and conventions -->
+  <p><br>
+  </p>
+  <!-- end terminology and conventions -->
+  <p><br>
+  </p>
+  <!-- end terminology and conventions -->
+  <p><br>
+  </p>
+  <!-- end terminology and conventions -->
+  <p><br>
+  </p>
+  <!-- start introduction -->
+  <section class="informative">
+    <h2>Introduction</h2>
+    <aside class="example">
+      <p>This chapter should describe the introduction to the test cases specified in the document.</p>
+      <p><strong>DELETE THIS COMMENT.</strong></p>
+    </aside>
+    <p>The purpose of this document is to provide test cases for &lt;<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="xxx" data-mce-index="34">xxx</span>&gt; <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="Enabler" data-mce-index="35">Enabler</span> Release &lt;<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="y" data-mce-index="36">y</span>.<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="z" data-mce-index="37">z</span>&gt;.</p>
+    <aside class="example">
+      <p>This part should give some introduction for the need of verification.</p>
+      <p><strong>DELETE THIS COMMENT.</strong></p>
+    </aside>
+    <p>The implementation of some features is optional for the Clients and/or the Servers in the &lt;<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="xxx" data-mce-index="38">xxx</span>&gt; <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="Enabler" data-mce-index="39">Enabler</span>. The tests associated with these optional features are marked as "(Includes Optional Features)" in the test specification.</p>
+    <aside class="example">
+      <p>List the items needed to test the <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="enabler" data-mce-index="40">enabler</span>, <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="e" data-mce-index="41">e</span>.<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="g" data-mce-index="42">g</span>. The following items on an overall level are needed to adequately test the &lt;<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="xxx" data-mce-index="43">xxx</span>&gt; <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="enabler" data-mce-index="44">enabler</span>:</p>
+      <ul>
+        <li>An origin server configured to support….</li>
+        <li>A web page providing a link…</li>
+        <li>[Optional] A web page providing a link…</li>
+      </ul>
+      <p>Detailed info will be put in the specific test cases description.</p>
+      <p><strong>DELETE THIS COMMENT.</strong></p>
+    </aside>
+    <aside class="example">
+      <p>If possible this part of the document should describe any protocols used by this <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="enabler" data-mce-index="45">enabler</span>, <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="e" data-mce-index="46">e</span>.<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="g" data-mce-index="47">g</span>. The &lt;<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="xxx" data-mce-index="48">xxx</span>&gt; <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="enabler" data-mce-index="49">enabler</span> tests are carried out using &lt;<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="yyy" data-mce-index="50">yyy</span>&gt; and/or &lt;<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="zzz" data-mce-index="51">zzz</span>&gt; protocols.</p>
+      <p><strong>DELETE THIS COMMENT.</strong></p>
+    </aside>
+  </section>
+  <!-- /end introduction -->
+  <p><br>
+  </p>
+  <!-- /end introduction -->
+  <p><br>
+  </p>
+  <!-- /end introduction -->
+  <p><br>
+  </p>
+  <!-- /end introduction -->
+  <p><br>
+  </p>
+  <!-- /end introduction -->
+  <p><br>
+  </p>
+  <!-- /end introduction -->
+  <p><br>
+  </p>
+  <!-- /end introduction -->
+  <p><br>
+  </p>
+  <!-- /end introduction -->
+  <p><br>
+  </p>
+  <!-- /end introduction -->
+  <p><br>
+  </p>
+  <!-- /end introduction -->
+  <p><br>
+  </p>
+  <!-- /end introduction -->
+  <p><br>
+  </p>
+  <!-- start Conformance Test Cases -->
+  <section>
+    <h2>&lt;<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="xxx" data-mce-index="52">xxx</span>&gt; Conformance Test Cases</h2>
+    <aside class="example">
+      <p>There should be a chapter for conformance tests, under this chapter the test cases may be grouped in best possible way according to <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="e" data-mce-index="53">e</span>.<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="g" data-mce-index="54">g</span>. feature or groups of features to make the document easy to read and use.</p>
+      <p>Test Cases should not address anything not explicitly mentioned in the Specifications or <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="ETR" data-mce-index="55">ETR</span>. They should also not address any quality of service issues. The Pass/Fail verdict for a Test Case should be clearly specified and not be open to interpretation.</p>
+      <p>If there are no conformance test cases available, please indicate with <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="'Not" data-mce-index="56">'Not</span> <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="Available'" data-mce-index="57">Available'</span>.</p>
+      <p>If information for a heading of the test case is not available, please indicate that with <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="'Not" data-mce-index="58">'Not</span> <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="Available'" data-mce-index="59">Available'</span> in the appropriate row of a test case.</p>
+      <p>Section <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="n" data-mce-index="60">n</span>.1 shows example on headings for one test case. It should be replicated, as needed, for each test case.</p>
+      <p>If the test case tests one or more optional <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="SCR" data-mce-index="61">SCR</span> Items, the title of the test case should have "(Includes Optional Features)" string appended to it.</p>
+      <p><strong>DELETE THIS COMMENT.</strong></p>
+    </aside>
+    <!-- start Conformance Test Cases Level 2 -->
+    <section>
+      <h2>&lt;<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="xxx-y" data-mce-index="62">xxx-y</span>.<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="z-con-number" data-mce-index="63">z-con-number</span>&gt;</h2>
+      <aside class="example">
+        <p>This section lists the steps needed for a conformance test case.</p>
+        <p><strong>DELETE THIS COMMENT.</strong></p>
+      </aside>
+      <table class="mce-item-table"><caption>Test Information for &lt;<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="yyy" data-mce-index="64">yyy</span>&gt; Conformance Test</caption>
+        <tbody>
+          <tr>
+            <td>Test Case Id</td>
+            <td>&lt;<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="xxx-y" data-mce-index="65">xxx-y</span>.<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="z-con-number" data-mce-index="66">z-con-number</span>, <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="e" data-mce-index="67">e</span>.<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="g" data-mce-index="68">g</span>. IMPS-1.2-con-001.&gt;</td>
+          </tr>
+          <tr>
+            <td>Test Object</td>
+            <td>&lt;Client and/or Server device under test.&gt;</td>
+          </tr>
+          <tr>
+            <td>Test Case Description</td>
+            <td>&lt;Short description of the test case, <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="e" data-mce-index="69">e</span>.<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="g" data-mce-index="70">g</span>. To test delivery functionality.&gt;</td>
+          </tr>
+          <tr>
+            <td>Specification Reference</td>
+            <td>&lt;[REFERENCE EXAMPLE 1] Chapter <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="x" data-mce-index="71">x</span>.&gt;</td>
+          </tr>
+          <tr>
+            <td><span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="SCR" data-mce-index="72">SCR</span> Reference</td>
+            <td>&lt;Reference to explicitly tested <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="SCR" data-mce-index="73">SCR</span> items, <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="e" data-mce-index="74">e</span>.<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="g" data-mce-index="75">g</span>. xxx-C-001-M.&gt;
+              <aside class="example">
+                <p>The <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="SCRs" data-mce-index="76">SCRs</span> listed in this section should directly apply to this test case's Test Object. Listing of the <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="SCRs" data-mce-index="77">SCRs</span> tested implicitly should be avoided.</p>
+                <p><strong>DELETE THIS COMMENT.</strong></p>
+              </aside>
+            </td>
+          </tr>
+          <tr>
+            <td>Tool</td>
+            <td>&lt;List any tool including version available for this test case, if any.&gt;</td>
+          </tr>
+          <tr>
+            <td>Test code</td>
+            <td>&lt;List any code including version available for this test case, if any.&gt;</td>
+          </tr>
+          <tr>
+            <td>Preconditions</td>
+            <td>&lt;List the preconditions needed to execute the test case, <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="e" data-mce-index="78">e</span>.<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="g" data-mce-index="79">g</span>.
+              <ul>
+                <ul>
+                  <li>Equipment:</li>
+                  <ul>
+                    <li>2 clients (A, B) / 1 server.</li>
+                    <li>Functioning SAP with the 2 user accounts (A, B) existing on it.</li>
+                  </ul>
+                  <li>State:</li>
+                  <ul>
+                    <li>Both clients are logged in.</li>
+                    <li>Both client and server support the same type of the delivery mechanism (Push or Notify/Get or both).</li>
+                    <li>Both clients and server support Delivery Report functionality.</li>
+                    <li>Client A is capable of displaying a successful delivery report.</li>
+                  </ul>
+                  <li>Continuation of / Can be tested at the same time as:</li>
+                  <ul>
+                    <li>IMPS-1.1-int-IMSE-001 - Verify that a message sent by one client is delivered to the other client.</li>
+                  </ul>
+                  <li>Prerequisite for this test:</li>
+                  <ul>
+                    <li>IMPS-1.1-int-IMSE-001 - Verify that a message sent by one client is delivered to the other client&gt;</li>
+                  </ul>
+                </ul>
+              </ul>
+              <p>&lt;Optionally ICS (Implementation Conformance Statement) / <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="IXIT" data-mce-index="80">IXIT</span> (Implementation <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="eXtra" data-mce-index="81">eXtra</span> Information for Testing) information can be added here.&gt;</p>
+              <ul>
+                <ul></ul>
+                <li>Applicability:</li>
+                <ul>
+                  <li><span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="ics_PSK_TLS" data-mce-index="82">ics_PSK_TLS</span> AND ics_3GPP.</li>
+                  <li><span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="ixit_mAC_KEY_ID" data-mce-index="83">ixit_mAC_KEY_ID</span>.&gt;</li>
+                </ul>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Test Procedure</td>
+            <td>&lt;Describe the procedure to execute the test case, <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="e" data-mce-index="84">e</span>.<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="g" data-mce-index="85">g</span>.
+              <ol>
+                <li>User sends <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="MMS" data-mce-index="86">MMS</span> message with terminal A to terminal B.</li>
+                <li>The message should be received in terminal B.</li>
+              </ol>
+              Any additional tips and tricks to the test procedure can also be added here.&gt;</td>
+          </tr>
+          <tr>
+            <td>Pass-Criteria</td>
+            <td>&lt;Describe the criteria for passing the test case, <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="e" data-mce-index="87">e</span>.<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="g" data-mce-index="88">g</span>.<br>
+              <ol>
+                <li><span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="MMS" data-mce-index="89">MMS</span> is received in terminal B.</li>
+                <li><span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="MMS" data-mce-index="90">MMS</span> is readable.&gt;</li>
+              </ol>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <!-- end Conformance Test Cases Level 2 --> <!-- end Conformance Test Cases Level 2 --> <!-- end Conformance Test Cases Level 2 --></section>
+  <!-- /end Conformance Test Cases -->
+  <p><br>
+  </p>
+  <!-- /end Conformance Test Cases -->
+  <p><br>
+  </p>
+  <!-- /end Conformance Test Cases -->
+  <p><br>
+  </p>
+  <!-- /end Conformance Test Cases -->
+  <p><br>
+  </p>
+  <!-- /end Conformance Test Cases -->
+  <p><br>
+  </p>
+  <!-- /end Conformance Test Cases -->
+  <p><br>
+  </p>
+  <!-- /end Conformance Test Cases -->
+  <p><br>
+  </p>
+  <!-- /end Conformance Test Cases -->
+  <p><br>
+  </p>
+  <!-- /end Conformance Test Cases -->
+  <p><br>
+  </p>
+  <!-- /end Conformance Test Cases -->
+  <p><br>
+  </p>
+  <!-- /end Conformance Test Cases -->
+  <p><br>
+  </p>
+  <!-- /end Conformance Test Cases -->
+  <p><br>
+  </p>
+  <!-- start Interoperability Test Cases -->
+  <section>
+    <h2>&lt;<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="xxx" data-mce-index="91">xxx</span>&gt; Interoperability Test Cases</h2>
+    <aside class="example">
+      <p>There should be a chapter for interoperability tests. Under this chapter the test cases should be grouped according to the <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="ETR" data-mce-index="92">ETR</span> feature key grouping as specified in the <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="ETR" data-mce-index="93">ETR</span> document for the <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="Enabler" data-mce-index="94">Enabler</span>. This is done for the ease of association of the test cases to the corresponding <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="ETR" data-mce-index="95">ETR</span> requirements and the <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="SCRs" data-mce-index="96">SCRs</span>.</p>
+      <p>Test Cases should not address anything not explicitly mentioned in the Specifications or <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="ETR" data-mce-index="97">ETR</span>. They should also not address any quality of service issues. The Pass/Fail verdict for a Test Case should be clearly specified and not be open to interpretation.</p>
+      <p>If there are no conformance test cases available, please indicate with <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="'Not" data-mce-index="98">'Not</span> <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="Available'" data-mce-index="99">Available'</span>.</p>
+      <p>If information for a heading of the test case is not available, please indicate that with <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="'Not" data-mce-index="100">'Not</span> <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="Available'" data-mce-index="101">Available'</span> in the appropriate row of a test case.</p>
+      <p>Section <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="n" data-mce-index="102">n</span>.1 shows example on headings for one test case. It should be replicated, as needed, for each test case.</p>
+      <p>If the test case tests one or more optional <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="SCR" data-mce-index="103">SCR</span> Items, the title of the test case should have "(Includes Optional Features)" string appended to it.</p>
+      <p><strong>DELETE THIS COMMENT.</strong></p>
+    </aside>
+    <!-- start Level 2 -->
+    <section>
+      <h2>&lt;<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="xxx-y" data-mce-index="104">xxx-y</span>.<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="z-int-number" data-mce-index="105">z-int-number</span>&gt;</h2>
+      <aside class="example">
+        <p>This section lists the steps needed for a interoperability test case.</p>
+        <p><strong>DELETE THIS COMMENT.</strong></p>
+      </aside>
+      <table class="mce-item-table"><caption>Test Information for &lt;<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="zzz" data-mce-index="106">zzz</span>&gt; Interoperability Test</caption>
+        <tbody>
+          <tr>
+            <td>Test Case Id</td>
+            <td>&lt;<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="xxx-y" data-mce-index="107">xxx-y</span>.<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="z-int-number" data-mce-index="108">z-int-number</span>, <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="e" data-mce-index="109">e</span>.<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="g" data-mce-index="110">g</span>. IMPS-1.2-int-001.&gt;</td>
+          </tr>
+          <tr>
+            <td>Test Object</td>
+            <td>&lt;Client and/or Server device under test.&gt;</td>
+          </tr>
+          <tr>
+            <td>Test Case Description</td>
+            <td>&lt;Short description of the test case, <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="e" data-mce-index="111">e</span>.<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="g" data-mce-index="112">g</span>. To test delivery functionality.&gt;</td>
+          </tr>
+          <tr>
+            <td>Specification Reference</td>
+            <td>&lt;[REFERENCE EXAMPLE 1] Chapter <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="x" data-mce-index="113">x</span>.&gt;</td>
+          </tr>
+          <tr>
+            <td><span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="SCR" data-mce-index="114">SCR</span> Reference</td>
+            <td>&lt;Reference to explicitly tested <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="SCR" data-mce-index="115">SCR</span> items, <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="e" data-mce-index="116">e</span>.<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="g" data-mce-index="117">g</span>. xxx-C-001-M.&gt;
+              <aside class="example">
+                <p>The <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="SCRs" data-mce-index="118">SCRs</span> listed in this section should directly apply to this test case's Test Object and to the <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="ETR" data-mce-index="119">ETR</span> requirement(<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="s" data-mce-index="120">s</span>) listed in the below <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="ETR" data-mce-index="121">ETR</span> Reference section. Listing of the <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="SCRs" data-mce-index="122">SCRs</span> tested implicitly should be avoided.</p>
+                <p><strong>DELETE THIS COMMENT.</strong></p>
+              </aside>
+            </td>
+          </tr>
+          <tr>
+            <td><span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="ETR" data-mce-index="123">ETR</span> Reference</td>
+            <td>&lt;Reference to the applicable <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="ETR" data-mce-index="124">ETR</span> requirement (<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="s" data-mce-index="125">s</span>), <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="e" data-mce-index="126">e</span>.<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="g" data-mce-index="127">g</span>. xxx-04&gt;
+              <aside class="example">
+                <p>The <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="ETR" data-mce-index="128">ETR</span> requirement(<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="s" data-mce-index="129">s</span>) listed in this section should directly apply to this test case's Test Object.</p>
+                <p><strong>DELETE THIS COMMENT.</strong></p>
+              </aside>
+            </td>
+          </tr>
+          <tr>
+            <td>Tool</td>
+            <td>&lt;List any tool including version available for this test case, if any.&gt;</td>
+          </tr>
+          <tr>
+            <td>Test code</td>
+            <td>&lt;List any code including version available for this test case, if any.&gt;</td>
+          </tr>
+          <tr>
+            <td>Preconditions</td>
+            <td>&lt;List the preconditions needed to execute the test case, <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="e" data-mce-index="130">e</span>.<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="g" data-mce-index="131">g</span>.
+              <ul>
+                <li>Equipment:</li>
+                <ul>
+                  <li>2 clients (A, B) / 1 server.</li>
+                  <li>Functioning SAP with the 2 user accounts (A, B) existing on it.</li>
+                </ul>
+                <li>State:</li>
+                <ul>
+                  <li>Both clients are logged in.</li>
+                  <li>Both client and server support the same type of the delivery mechanism (Push or Notify/Get or both).</li>
+                  <li>Both clients and server support Delivery Report functionality.</li>
+                  <li>Client A is capable of displaying a successful delivery report.</li>
+                </ul>
+                <li>Continuation of / Can be tested at the same time as:</li>
+                <ul>
+                  <li>IMPS-1.1-int-IMSE-001 - Verify that a message sent by one client is delivered to the other client.</li>
+                </ul>
+                <li>Prerequisite for this test:</li>
+                <ul>
+                  <li>IMPS-1.1-int-IMSE-001 - Verify that a message sent by one client is delivered to the other client.&gt;</li>
+                </ul>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Test Procedure</td>
+            <td>&lt;Describe the procedure to execute the test case, <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="e" data-mce-index="132">e</span>.<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="g" data-mce-index="133">g</span>.
+              <ol>
+                <li>User sends <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="MMS" data-mce-index="134">MMS</span> message with terminal A to terminal B.</li>
+                <li>The message should be received in terminal B.</li>
+              </ol>
+              Any additional tips and tricks to the test procedure can also be added here.&gt;</td>
+          </tr>
+          <tr>
+            <td>Pass-Criteria</td>
+            <td>&lt;Describe the criteria for passing the test case, <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="e" data-mce-index="135">e</span>.<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="g" data-mce-index="136">g</span>.<br>
+              <ol>
+                <li><span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="MMS" data-mce-index="137">MMS</span> is received in terminal B.</li>
+                <li><span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="MMS" data-mce-index="138">MMS</span> is readable.&gt;</li>
+              </ol>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <!-- /end Level 2 --> <!-- /end Level 2 --> <!-- /end Level 2 --></section>
+  <!-- end Interoperability Test Cases -->
+  <p><br>
+  </p>
+  <!-- end Interoperability Test Cases -->
+  <p><br>
+  </p>
+  <!-- end Interoperability Test Cases -->
+  <p><br>
+  </p>
+  <!-- end Interoperability Test Cases -->
+  <p><br>
+  </p>
+  <!-- end Interoperability Test Cases -->
+  <p><br>
+  </p>
+  <!-- end Interoperability Test Cases -->
+  <p><br>
+  </p>
+  <!-- end Interoperability Test Cases -->
+  <p><br>
+  </p>
+  <!-- end Interoperability Test Cases -->
+  <p><br>
+  </p>
+  <!-- end Interoperability Test Cases -->
+  <p><br>
+  </p>
+  <!-- end Interoperability Test Cases -->
+  <p><br>
+  </p>
+  <!-- end Interoperability Test Cases -->
+  <p><br>
+  </p>
+  <!-- end Interoperability Test Cases -->
+  <p><br>
+  </p>
+  <!-- end Interoperability Test Cases -->
+  <p><br>
+  </p>
+  <!-- end Interoperability Test Cases -->
+  <p><br>
+  </p>
+  <!-- start Conformance Test Case applicability appendix -->
+  <section class="appendix">
+    <h2>&lt;&lt;Optional&gt;&gt; Conformance Test Case applicability</h2>
+    <!-- start Introduction -->
+    <section>
+      <h2>Introduction</h2>
+      <p>This section shall help implementers of the &lt;&lt;<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="xxx" data-mce-index="139">xxx</span>&gt;&gt; <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="Enabler" data-mce-index="140">Enabler</span> to select appropriate Conformance test cases that are applicable to the features implemented.</p>
+      <p>This appendix lists all test cases testing only mandatory features, ICS, <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="IXIT" data-mce-index="141">IXIT</span> and a mapping from ICS/<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="IXIT" data-mce-index="142">IXIT</span> to applicable test cases as defined by the Open Mobile Alliance.</p>
+    </section>
+    <!-- end Introduction --> <!-- start Test Cases testing only mandatory features -->
+    <section>
+      <h2>Test Cases testing only mandatory features</h2>
+      <p>These Conformance test cases are independent from any applicability, are testing only mandatory <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="SCRs" data-mce-index="143">SCRs</span> and SHALL be run with every implementation.</p>
+      <table class="mce-item-table"><caption>Test Cases testing only mandatory features</caption>
+        <thead>
+          <tr>
+            <td>Test Case</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>SUPL-1.0-con-000 - Compatible Versions</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <!-- /end Test Cases testing only mandatory features --> <!-- /end Test Cases testing only mandatory features --> <!-- /end Test Cases testing only mandatory features --> <!-- start Applicability -->
+    <section>
+      <h2>Applicability</h2>
+      <!-- start client ics -->
+      <section>
+        <h2>Client ICS</h2>
+        <table class="mce-item-table"><caption>Client ICS</caption>
+          <thead>
+            <tr>
+              <td>ICS</td>
+              <td>Description</td>
+              <td><span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="SCR" data-mce-index="144">SCR</span> Reference(<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="s" data-mce-index="145">s</span>)</td>
+              <td>Supported (yes/no)</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="ics_SLP_SessionID" data-mce-index="146">ics_SLP_SessionID</span> _Ipv4.</td>
+              <td>IPV4 in <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="SLP" data-mce-index="147">SLP</span> session ID supported.</td>
+              <td><br>
+              </td>
+              <td><br>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- /end client ics --> <!-- /end client ics --> <!-- /end client ics --> <!-- start Client IXIT -->
+      <section>
+        <h2>Client <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="IXIT" data-mce-index="148">IXIT</span></h2>
+        <table class="mce-item-table"><caption>Client <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="IXIT" data-mce-index="149">IXIT</span></caption>
+          <thead>
+            <tr>
+              <td><span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="IXIT" data-mce-index="150">IXIT</span></td>
+              <td>Description</td>
+              <td>Unit &lt;&lt;(Range of values)&gt;&gt;</td>
+              <td>Value</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ixit_timer_UT1.</td>
+              <td>Value of Timer UT1.</td>
+              <td>seconds (5 to 25).</td>
+              <td><br>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- end Client IXIT --> <!-- end Client IXIT --> <!-- end Client IXIT --> <!-- start Server ICS -->
+      <section>
+        <h2>Server ICS</h2>
+        <table class="mce-item-table"><caption>Server ICS</caption>
+          <thead>
+            <tr>
+              <td>ICS</td>
+              <td>Description</td>
+              <td><span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="SCR" data-mce-index="151">SCR</span> Reference(<span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="s" data-mce-index="152">s</span>)</td>
+              <td>Supported (yes/no)</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="ics_SLP_SessionID" data-mce-index="153">ics_SLP_SessionID</span> _Ipv4.</td>
+              <td>IPV4 in <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="SLP" data-mce-index="154">SLP</span> session ID supported.</td>
+              <td><br>
+              </td>
+              <td><br>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- end Server ICS --> <!-- end Server ICS --> <!-- end Server ICS --> <!-- start Server IXIT -->
+      <section>
+        <h2>Server <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="IXIT" data-mce-index="155">IXIT</span></h2>
+        <table class="mce-item-table"><caption>Server <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="IXIT" data-mce-index="156">IXIT</span></caption>
+          <thead>
+            <tr>
+              <td><span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="IXIT" data-mce-index="157">IXIT</span></td>
+              <td>Description</td>
+              <td>Unit &lt;&lt;(Range of values)&gt;&gt;</td>
+              <td>Value</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ixit_timer_ST1.</td>
+              <td>Value of Timer ST1.</td>
+              <td>seconds (5 to 25).</td>
+              <td><br>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- end Server IXIT --> <!-- end Server IXIT --> <!-- end Server IXIT --></section>
+    <!-- end Applicability --> <!-- end Applicability --> <!-- end Applicability --> <!-- start ICS to test case mapping -->
+    <section>
+      <h2>ICS to test case mapping</h2>
+      <p>According to the ICS described above the applicable test cases can be derived from the following table.</p>
+      <table class="mce-item-table"><caption>ICS to test case mapping</caption>
+        <thead>
+          <tr>
+            <td>Applicability</td>
+            <td>Test Cases</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="ics_MT_SMS" data-mce-index="158">ics_MT_SMS</span> AND ics_3GPP.</td>
+            <td>SUPL-1.0-con-014 - Incorrect MT <span class="mce-spellchecker-word" data-mce-bogus="1" data-mce-word="SMS" data-mce-index="159">SMS</span> message content.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <!-- end ICS to test case mapping --> <!-- end ICS to test case mapping --> <!-- end ICS to test case mapping --></section>
+  <!-- end Conformance Test Case applicability appendix -->
+  <p><br>
+  </p>
+  <!-- end Conformance Test Case applicability appendix -->
+  <p><br>
+  </p>
+  <!-- end Conformance Test Case applicability appendix -->
+  <p><br>
+  </p>
+  <!-- end Conformance Test Case applicability appendix -->
+  <p><br>
+  </p>
+  <!-- end Conformance Test Case applicability appendix -->
+  <p><br>
+  </p>
+  <!-- end Conformance Test Case applicability appendix -->
+  <p><br>
+  </p>
+  <!-- end Conformance Test Case applicability appendix -->
+  <p><br>
+  </p>
+  <!-- end Conformance Test Case applicability appendix -->
+  <p><br>
+  </p>
+  <!-- end Conformance Test Case applicability appendix -->
+  <p><br>
+  </p>
+  <!-- end Conformance Test Case applicability appendix -->
+  <p><br>
+  </p>
+  <!-- end Conformance Test Case applicability appendix -->
+  <p><br>
+  </p>
+  <!-- end Conformance Test Case applicability appendix -->
+  <p><br>
+  </p>
+  <!-- end Conformance Test Case applicability appendix -->
+  <p><br>
+  </p>
+  <!-- end Conformance Test Case applicability appendix -->
+  <p><br>
+  </p>
+  <!-- end Conformance Test Case applicability appendix -->
+  <p><br>
+  </p>
+  <!-- end Conformance Test Case applicability appendix -->
+  <p><br>
+  </p>
+  <!-- start additional appendix -->
+  <p><br>
+  </p>
+  <!-- note that there is no need for appendix class -->
+  <section>
+    <h2>Additional Appendix</h2>
+    <aside class="example">
+      <p>If needed, add annex to provide additional information to support the document.</p>
+      <p>In general, this information should be informative, as normative material should be contained in the primary body of the document.</p>
+      <p>Note that the styles for the headers in the appendix (App1, App2, App3) are different than the main body.</p>
+      <p>The use below is intended to validate the styles to be used. Remove if not needed.</p>
+      <p><strong>DELETE THIS COMMENT</strong></p>
+    </aside>
+    <!-- start App Headers -->
+    <section>
+      <h2>App Headers</h2>
+      <p>Text goes here.</p>
+      <!-- start More Headers -->
+      <section>
+        <h2>More Headers</h2>
+        <p>More text goes here.</p>
+        <!-- start Even More Headers -->
+        <section>
+          <h2>Even More Header</h2>
+          <p>More text goes here.</p>
+          <figure id="fig1_example"><img src="images/fig1_example.png" data-mce-src="images/fig1_example.png">
+            <figcaption>Example Figure.</figcaption>
+          </figure>
+          <p>new paragraph</p>
+          <p>New text</p>
+        </section>
+        <!-- end Even More Headers --></section>
+      <!-- end More Headers --></section>
+    <!-- end App Headers --></section>
   <!-- end additional appendix -->
+  <p><br>
+  </p>
   <!-- end additional appendix -->
+  <p><br>
+  </p>
   <!-- end additional appendix -->
+  <p><br>
+  </p>
   <!-- end additional appendix -->
+  <p><br>
+  </p>
   <!-- end additional appendix -->
+  <p><br>
+  </p>
   <!-- end additional appendix -->
+  <p><br>
+  </p>
   <!-- end additional appendix -->
+  <p><br>
+  </p>
   <!-- end additional appendix -->
+  <p><br>
+  </p>
   <!-- end additional appendix -->
+  <p><br>
+  </p>
   <!-- end additional appendix -->
+  <p><br>
+  </p>
   <!-- end additional appendix -->
+  <p><br>
+  </p>
   <!-- end additional appendix -->
+  <p><br>
+  </p>
   <!-- end additional appendix -->
+  <p><br>
+  </p>
   <!-- end additional appendix -->
-  <!-- end additional appendix -->
-
-</body>
-
-</html>
+  <p><br>
+  </p>
+  <!-- end additional appendix --></body>
