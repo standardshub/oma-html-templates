@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>OMA [ReleaseName] Requirments</title>
+    <meta charset="utf-8">
+    <script src="http://openmobilealliance.github.io/Tools-Old/builds/respec-oma-common.js" async class="remove">
+    </script>
+
+
+    <script class="remove">
+      var respecConfig = {
+        // for editor use
+        docType: "RD", // options are BASE, RD, AD, TS, SUP, ETS, ORG
+        subtitle: "OMA-RD-<short-name>_Vx_y",
+        shortName:  "shortName",
+        otherLinks: [{
+          key: "Other Link",
+          data: [{
+            value: "Link Name",
+            href: "#location"
+          }]
+        }],
+        editors: [{
+          name:       "Editor Name",
+          url:        "http://example.com/",
+          company:    "Editor Company",
+          companyURL: "http://example.org/",
+          mailto:     "editor@example.com",
+          note:       "editor note"
+        }],
+
+        authors: [{
+          name:       "Author Name",
+          url:        "http://example.com/",
+          company:    "Author Company",
+          companyURL: "http://example.org/",
+          mailto:     "author@example.com",
+          note:       "author note"
+        }],
+
+        interactiveLinks: [{
+          name: "Link Name",
+          description: "Link Description",
+          uri: "http://example.com/",
+        },{
+          name: "Second Link Name",
+          description: "Second Link Description",
+          uri: "http://example2.com/",
+          }],
+        // for staff only
+        specStatus: "DRAFT", // options are Draft, Candidate, Approved, Historic
+        publishDate: ""
+      };
+    </script>
+  </head><!-- table of content & table of figures -->
+<section id="toc"></section>
+<section id="tof"></section>
+<section id="tot"></section>
+<section>
+<h2>Scope</h2>
+<aside class="example">
+<p>This clause defines the scope and applicability of the RD.</p>
+<strong>DELETE THIS COMMENT</strong></aside>
+<p>[Enter text here]</p>
+<aside class="example">This clause acts as a reminder to contributors of the RD:
+<ul>
+<li>The RD has to provide a prose description illustrating what the release is about.</li>
+<li>The RD has to provide the requirements necessary for the service release technical specification activity.</li>
+<li>The RD has to provide only the requirements in the scope of the work item under which it is created.</li>
+<li>Use cases in the Appendix of the RD are additional to the main text in the RD and facilitate clarification of the requirements.</li>
+</ul>
+<strong>DELETE THIS COMMENT</strong></aside>
+<p>[Enter text here]</p>
+</section>
+<section>
+<h2>Terminology and Conventions</h2>
+<section>
+<h2>Conventions</h2>
+<p>The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in . All sections and appendixes, except "Scope"and "Introduction", are normative, unless they are explicitly indicated to be informative.</p>
+</section>
+<aside class="example">
+<p>If needed, describe or declare using appropriate normative references the additional conventions that are used.</p>
+<strong>TO BE DELETED </strong></aside>
+<section>
+<h2>Definitions</h2>
+<aside class="example">
+<p>Add definitions in new rows of the following table as needed. The following examples show how dictionary references should be made as well as locally defined terms. This table should be maintained in sorted alphabetic order based on the labels of the terms.</p>
+<ul>Examples:
+<li>Entity Use definition Number 1 from</li>
+<li>Interactive Service Use definition from</li>
+<li>Local Term The definition description would be presented directly</li>
+</ul>
+<strong>TO BE DELETED </strong></aside>
+<aside class="example">
+<p>Add/Remove definition rows to this table as needed</p>
+<strong>TO BE DELETED </strong></aside>
+</section>
+<section>
+<h2>Abbreviations</h2>
+<aside class="example">
+<p>Add abbreviations as needed to the following table. No special notation should be made regarding terms copied from the Dictionary. This table should be maintained in alphabetic order.</p>
+<strong>TO BE DELETED </strong></aside>
+<p>OMA Open Mobile Alliance</p>
+<aside class="example">
+<p>Add/Remove definition rows to this table as needed</p>
+<strong>TO BE DELETED</strong></aside>
+</section>
+</section>
+<section>
+<h2>Introduction</h2>
+<aside class="example">
+<p>This clause contains an introduction to this requirements specification, describing the background.</p>
+<strong>DELETE THIS COMMENT</strong></aside>
+<section>
+<h2>Version 1.0</h2>
+<aside class="example">
+<p>This section provides a high level, concise and informative description of the <strong>main functionality</strong> supported in the initial enabler or reference release version described in this AD. The description should be brief, target length should be a few paragraphs. When the enabler or reference release is finished, this description should be aligned with the final functionality.</p>
+<strong>DELETE THIS COMMENT</strong></aside>
+</section>
+<section>
+<h2>Version x.y</h2>
+<aside class="example">
+<p>This section should be included for each new major or minor version of the RD.</p>
+<p>It should provide a high level, concise and informative description of the <strong>new or modified functionality</strong> introduced in this version of the RD, compared to the previous version. The description should be brief, target length should be a few paragraphs. When the release or reference release is finished, this description should be aligned with the final functionality differences.</p>
+<strong>DELETE THIS COMMENT</strong></aside>
+<section>
+<h2>Version x.y.z</h2>
+<aside class="example">
+<p>This section should be included for each new service release of the RD. It should describe at a high level the main changes made to the RD compared to the previous version. The description should be brief, target length should be one paragraph.</p>
+<strong>DELETE THIS COMMENT</strong></aside>
+</section>
+</section>
+</section>
+<section>
+<h2>[Release name] release description (Informative)</h2>
+<aside class="example">
+<p>This clause illustrates what the release is about, describing the release in terms of its functionalities, identifying the actors and their relationships. The inclusion of any pictures to back up text should be kept simple, showing various actors involved. The text shall summarize the functionalities of the release in a generic form which does not constrain terminal or network design. It is intended to allow an understanding of the release without regard to implementation. The description should include functional, charging, administration and configuration, usability, interoperability, privacy aspects as well as interactions with other releases.</p>
+<p>Part of this text can be easily extracted from the WID</p>
+<strong>DELETE THIS COMMENT.</strong></aside>
+<figure id="fig1_example"><img src="images/fig1_example_figure.png" />
+<figcaption>fig1_example_figure</figcaption>
+</figure>
+<section>
+<h2>End-to-end Service Description</h2>
+<aside class="example">
+<p>This section provides indications on what is the business rational for creating such enabler release. The text has to be a high level description of the features and functions provided by the OMA enabler release, including their objectives, when considered as a service (e.g. Mobile Code, Mobile Advertising, Customized Multimedia Ringing, MMS, Mobile Spam Reporting) and/or a building block (e.g. Service User Profile Management , Parlay Service Access, Converged IP Messaging, Device Profile Evolution).</p>
+<p>This description should address the end-to-end experience provided by the OMA services (e.g. the end-users prefer to receive advertising contents that are targeted to their interests and needs; they demand that the service provider guarantees that messages are sent by authenticated parties, as they do not want to receive spam). Also, this description should address what are the overall functions of the enabler release to be able to support other enablers (e.g. Service User Profile Management provides one unique central point to access and allow management of user data).</p>
+<p>The end-to-end description should address the direct benefits for the end users as well as the indirect benefits for the equipment usage, or network interconnections, or overall operations or content adaptation, to mention just a few.</p>
+<strong>DELETE THIS COMMENT.</strong></aside>
+<aside class="example">
+<p>The text in this section should be brief, target length should be a few paragraphs. When the RD definition is finished, this description should be aligned with the final functionality.</p>
+<strong>DELETE THIS COMMENT.</strong></aside>
+</section>
+</section>
+<section>
+<h2>Requirements (Normative)</h2>
+<aside class="example">
+<p>This section should capture the requirements necessary for service releases to support end-to-end interoperability across different devices, networks, service providers and network operators. Linkage of requirements to Use Cases is not mandatory.</p>
+<p>In cases where a common or shared requirement document will supply requirements for a section below (e.g. Privacy RD), note it in the appropriate section and reference the requirements to be included. Then, in the table, add any specific requirements not covered by the shared document.</p>
+<p>Each requirement listed in the tables below includes an indication of release. The value for the release should identify the release in which the requirement desired, expected, or is fulfilled. In early phases of RD development preceding the RD Review, this field should provide guidance on preferences. Before commencing the Consistency Review, the fields should be updated, if needed, to reflect the actual requirement coverage fulfilled by the release.</p>
+<p>Within the requirement description column in the tables of the following sections, &ldquo;Notes&rdquo; might be optionally included. These notes will be considered informative material. Notes are intended to be used to include any kind of information that could help to clarify the corresponding requirement (meaning, applicability, implications, etc).</p>
+<p>In order to improve further development it is recommended that the reason for classifying a requirement as "SHOULD" or &ldquo;MAY&rdquo;(instead of "SHALL") shall be given as an "Informational Note" for each such requirement. See the following example:</p>
+<strong>DELETE THIS COMMENT</strong></aside>
+<table><caption>Example</caption>
+<thead>
+<tr>
+<td>Label</td>
+<td>Description</td>
+<td>Release</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>FOO-EXMPL-001</p>
+</td>
+<td>
+<p>The FOO Enabler may be capable to notify users or not based on political affiliations contained in the User Profile <strong>Informational Note:</strong> This requirement is optional because</p>
+<p>in some markets this functionality could be forbidden due to regulatory aspects</p>
+</td>
+<td>FOO V1.0</td>
+</tr>
+</tbody>
+</table>
+<aside class="example">
+<p>For each table (i.e. set of requirements) in this chapter, please provide introductory text describing the background to the requirements.</p>
+<strong>DELETE THIS COMMENT</strong></aside>
+<section>
+<h2>High-Level Functional Requirements</h2>
+<aside class="example">
+<p>This clause identifies the high level functional requirements for this release. These requirements will be used to describe and derive the functions and interfaces that the release will support, and which defines its core purpose. When writing requirements, care should be taken to recognise the difference between the release specifying a mechanism to perform a function versus its required usage in any given deployment. Requirements shall be presented at a high level, and not assume or imply the technology or implementation of the requirements. Whenever a requirement is directly attributable to a particular actor, it is recommended to mention it.</p>
+<p>Examples of such requirements are:</p>
+<ul>
+<li>The XYZ release SHOULD support content delivery estimation time before and /or during service execution.</li>
+<li>The XYZ release MUST be capable of supporting the Service Provider to log information about invocations of this release</li>
+<li>XYZ release MUST allow the end user to terminate a session</li>
+<li>The XYZ release MUST allow actor X to perform function Y</li>
+</ul>
+<p>If possible, requirements should be listed in a logical sequence that intuitively captures the behaviour of the release (or feature of the release). In order to get a good readability and quality of RDs, some additional Sections (&ldquo;Heading 2&rdquo;) and Subsections should be identified, that group together requirements related to a specific functionality, avoiding having the most of the requirements as High-Level Functional requirements.</p>
+<strong>DELETE THIS COMMENT</strong></aside>
+<p>[Intro text for High Level requirements here]</p>
+<table><caption>High-Level Functional Requirements</caption>
+<thead>
+<tr>
+<td>Label</td>
+<td>Description</td>
+<td>Release</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FOO-HLF-001</td>
+<td>This is where the requirement goes. <strong>Informational Note:</strong>This is where any supporting comments would be placed, if needed</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<section>
+<h2>Security</h2>
+<aside class="example">
+<p>This clause identifies the high-level security needs for this release. Requirements shall be presented at a high level, and not assume or Simply the technology or implementation of the requirements in this area.</p>
+<strong>DELETE THIS COMMENT.</strong></aside>
+<p>[Intro text for Security requirements here]</p>
+<table><caption>High-Level Functional Requirements &ndash; Security Items</caption>
+<thead>
+<tr>
+<td>Label</td>
+<td>Description</td>
+<td>Release</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FOO-SEC-001</td>
+<td>This is where the requirement goes. <strong>Informational Note:</strong> This is where any supporting comments would be placed, if needed</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<section>
+<h2>Authentication</h2>
+<aside class="example">
+<p>The table in Authentication may have model requirements which might be applicable for this RD.</p>
+<strong>DELETE THIS COMMENT.</strong></aside>
+<p>[Intro text for Authentification]</p>
+<table><caption>High-Level Functional Requirements &ndash; Authentication</caption>
+<thead>
+<tr>
+<td>Label</td>
+<td>Description</td>
+<td>Release</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td>This function MUST be able to authenticate the [requestor of this function | user | device | initiator ] [if required by the applicable policies].</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>This function MUST be able to authenticate the [provider of this function | server | proxy | responder ] [if required by the applicable policies].</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>This function MUST be able to provide data origination authentication [if required by the applicable policies]. This means,it MUST be possible to ensure confidence that a received message or piece of data has been created by a certain party at some (unspecified) time in the past, and that this data has not been corrupted or tampered with.</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>This function MUST be able to provide replay protection [if required by the applicable policies] to ensure confidence that a received message has not been recorded and played back.</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>This function MUST be able to authenticate the source of the broadcast or streaming [if required by the applicable policies].</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>This function MUST be able to implicitly authenticate the destinations of the broadcast or streaming [if required by the applicable policies].</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>This function MUST allow the user to authenticate himself to the [device | agent] e.g., by entering a PIN code or by using biometrics if applicable.</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section>
+<h2>Authorization</h2>
+<aside class="example">
+<p>The table in Authorization Items may have model requirements which might be applicable for this RD.</p>
+<strong>DELETE THIS COMMENT.</strong></aside>
+<p>[Intro text for Authentication requirement here]</p>
+<table><caption>High-Level Functional Requirements &ndash; Authorization Items</caption>
+<thead>
+<tr>
+<td>Label</td>
+<td>Description</td>
+<td>Release</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td>This function MUST be able to authorize access only to requestors entitled to access the function.</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section>
+<h2>Data Integrity</h2>
+<aside class="example">
+<p>The table in Data Integrity Items may have model requirements which might be applicable for this RD.</p>
+<strong>DELETE THIS COMMENT.</strong></aside>
+<p>The interaction between these functional entities and the OMA Charging Enabler is described in [OMA-CHG-AD]. Description of how charging is performed is beyond the scope of the present specification.</p>
+<table><caption>High-Level Functional Requirements &ndash; Data Integrity Items</caption>
+<thead>
+<tr>
+<td>Label</td>
+<td>Description</td>
+<td>Release</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td>This function MUST be able to provide data integrity, protecting against accidental or intentional changes to the data, by ensuring that changes to the data are detectable.</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section>
+<h2>Confidentiality</h2>
+<aside class="example">
+<p>The table in Confidentiality Items may have model requirements which might be applicable for this RD.</p>
+<p>&nbsp;</p>
+<strong>DELETE THIS COMMENT.</strong></aside>
+<p>[Intro text for Confidentiality requirements here]</p>
+<table><caption>High-Level Functional Requirements &ndash; Confidentiality Items</caption>
+<thead>
+<tr>
+<td>Label</td>
+<td>Description</td>
+<td>Release</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td>
+<p>This function MUST use/support data confidentiality that ensures that transmitted information is not made available or disclosed to unauthorised individuals, entities, or processes</p>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td>
+<p>This function MUST use/support* data confidentiality that ensures that stored information is not made available or disclosed to unauthorised individuals, entities, or processes.</p>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section>
+<h2>Charging Events</h2>
+<aside class="example">
+<p>This clause identifies the specific Charging Event Items needed for this release. Requirements shall be presented at a high level, and not assume or imply the technology or implementation of the requirements.</p>
+<strong>DELETE THIS COMMENT.</strong></aside>
+<p>[Intro text for Charging requirements here]</p>
+<table><caption>High-Level Functional Requirements &ndash; Charging Events Items</caption>
+<thead>
+<tr>
+<td>Label</td>
+<td>Description</td>
+<td>Release</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FOO-CHG-001</td>
+<td>The list of Charging events SHALL include at least.
+<ul>
+<li>event 1</li>
+<li>event 2</li>
+<li>&hellip;</li>
+</ul>
+Informational Note: This is where any supporting comments would be placed, if needed</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section>
+<h2>Administration and Configuration</h2>
+<aside class="example">
+<p>This clause identifies the high-level administration and configuration needs for this release. Requirements shall be presented at a high level, and not assume or imply the technology or implementation of the requirements.</p>
+<strong>DELETE THIS COMMENT.</strong></aside>
+<p>[Intro text for Administration and Configuration requirements here]</p>
+<table><caption>High-Level Functional Requirements &ndash; Administration and Configuration Items</caption>
+<thead>
+<tr>
+<td>Label</td>
+<td>Description</td>
+<td>Release</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FOO-ADM-001</td>
+<td>This is where the requirement goes.<strong>Informational Note:</strong> This is where any supporting comments would be placed, if needed</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section>
+<h2>Usability</h2>
+<aside class="example">
+<p>This clause identifies the high-level administration and configuration needs for this release. Requirements shall be presented at a high level, and not assume or imply the technology or implementation of the requirements.</p>
+<strong>DELETE THIS COMMENT.</strong></aside>
+<p>[Intro text for Usability requirements here]</p>
+<table><caption>High-Level Functional Requirements &ndash; Usability Items</caption>
+<thead>
+<tr>
+<td>Label</td>
+<td>Description</td>
+<td>Release</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FOO-USE-001</td>
+<td>This is where the requirement goes.<strong>Informational Note:</strong> This is where any supporting comments would be placed, if needed</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section>
+<h2>Interoperability</h2>
+<aside class="example">
+<p>This clause identifies the high-level administration and configuration needs for this release. Requirements shall be presented at a high level, and not assume or imply the technology or implementation of the requirements.</p>
+<strong>DELETE THIS COMMENT.</strong></aside>
+<p>[Intro text for Administration and Configuration requirements here]</p>
+<table><caption>High-Level Functional Requirements &ndash; Interoperability Items</caption>
+<thead>
+<tr>
+<td>Label</td>
+<td>Description</td>
+<td>Release</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FOO-INT-001</td>
+<td>This is where the requirement goes.<strong>Informational Note:</strong> This is where any supporting comments would be placed, if needed</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section>
+<h2>Privacy</h2>
+<aside class="example">
+<p>This clause identifies the high-level administration and configuration needs for this release. Requirements shall be presented at a high level, and not assume or imply the technology or implementation of the requirements.</p>
+<strong>DELETE THIS COMMENT.</strong></aside>
+<p>[Intro text for Administration and Configuration requirements here]</p>
+<table><caption>High-Level Functional Requirements &ndash; Privacy Items</caption>
+<thead>
+<tr>
+<td>Label</td>
+<td>Description</td>
+<td>Release</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FOO-PRV-001</td>
+<td>This is where the requirement goes.<strong>Informational Note:</strong> This is where any supporting comments would be placed, if needed</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section>
+<h2>Overall System Requirements</h2>
+<aside class="example">
+<p>This clause describes the general behaviour and characteristics of the release such as deployment options, conformance, exceptions, use of existing technologies and specifications, etc. Requirements shall be presented at a high level, and not assume or imply the technology or implementation of the requirements. Examples of General System Requirements are:</p>
+<p>&nbsp;</p>
+<ul>
+<li>The XYZ release MUST NOT restrict deployment options</li>
+<li>The XYZ release MUST be defined in an execution environment neutral manner</li>
+<li>The XYZ release MUST specify interfaces that are access technology neutral</li>
+<li>The XYZ release MUST be able to support services applicable to any kind of users or segments</li>
+<li>It SHOULD be possible to use existing OMA Device Management and Provisioning releases</li>
+</ul>
+<strong>DELETE THIS COMMENT.</strong></aside>
+<table><caption>High-Level System Requirements</caption>
+<thead>
+<tr>
+<td>Label</td>
+<td>Description</td>
+<td>Release</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FOO-SYS-001</td>
+<td>This is where the requirement goes.<strong>Informational Note:</strong> This is where any supporting comments would be placed, if needed</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section class="informative">
+<h2>Use Cases (Informative)</h2>
+<aside class="example">
+<p>This clause provides high-level use cases focused on the users and deployment scenarios point of view, targeting release&rsquo;s requirements. Use cases are additional to the main text in the RD and facilitate clarification of the requirements: actually, a use case has to be considered needed (and then added to the RD) when it helps the understanding of a set of requirements. For this reason, it is recommended that the total number of use cases be minimised. Pre conditions and Actors involved MAY be described at the beginning of each use case if this is found to be useful.</p>
+<strong>DELETE THIS COMMENT.</strong></aside>
+<p>[Text here]</p>
+<section>
+<h2>Use Case Title</h2>
+<aside class="example">
+<p>The level of detail of descriptions shall be above technical implementations of protocols. The sub-sections below should consist of one or two sentences.</p>
+<strong>DELETE THIS COMMENT.</strong></aside>
+<section>
+<h2>Short Description</h2>
+<aside class="example">
+<p>Describe the interaction that occurs in this use case (mandatory)</p>
+<strong>DELETE THIS COMMENT.</strong></aside>
+</section>
+<section>
+<h2>Market benefits</h2>
+<aside class="example">
+<p>Describe the interaction that occurs in this use case (mandatory)</p>
+<strong>DELETE THIS COMMENT.</strong></aside>
+</section>
+</section>
+</section>
+<section class="appendix">
+<h2>[Additional Information]</h2>
+<aside class="example">
+<p>If needed, add annex to provide additional information to support the document. In general, this information should be informative, as normative material should be contained in the primary body of the document. Note that the styles for the headers in the appendix (App1, App2, App3) are different than the main body. The use below is intended to validate the styles to be used. Remove if not needed.</p>
+<strong>DELETE THIS COMMENT.</strong></aside>
+<p>[Text here]</p>
+<section>
+<h2>App Headers</h2>
+<p>[More text]</p>
+<section>
+<h2>More Headers</h2>
+<p>[More text]</p>
+<section>
+<h2>Even More Headers</h2>
+<p>[More text]</p>
+</section>
+</section>
+</section>
+</section>
